@@ -1,152 +1,135 @@
-<div align="center">
+English · [Português](README.pt-BR.md) · [Español](README.es.md)
 
-**English** · [Português](README.pt-BR.md) · [Español](README.es.md)
+# PrimeVMS
 
-# PRIME**VMS** — Free VMS software for IP cameras
+Free video management software (VMS) for IP cameras and CCTV on Windows. Watch live, record
+around the clock, play back and export video from any ONVIF or RTSP camera.
 
-**Free video management system (VMS) for CCTV: live view, 24/7 recording, playback and export.**
-Free core with **no per-camera license fees** · advanced modules on **affordable plans**.
+The core product is free, with no per-camera license. Advanced modules are available
+on affordable plans.
 
-[![Latest version](https://img.shields.io/github/v/release/Daniel1ux/Prime-VMS-Public?label=latest%20version&color=c5e82e&labelColor=0a1626)](https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest)
-![Windows 10/11 64-bit](https://img.shields.io/badge/Windows-10%20%2F%2011%20(64--bit)-0b2545)
-![ONVIF / RTSP](https://img.shields.io/badge/cameras-ONVIF%20%2F%20RTSP-00e5ff?labelColor=0a1626)
-![Languages](https://img.shields.io/badge/languages-EN%20%C2%B7%20PT%20%C2%B7%20ES-c5e82e?labelColor=0a1626)
+[Download](https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest) ·
+[Website](https://daniel1ux.github.io/Prime-VMS-Public/) ·
+[Release notes](https://github.com/Daniel1ux/Prime-VMS-Public/releases)
 
-### [⬇ Download PrimeVMS for free](https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest) · [🌐 Website](https://daniel1ux.github.io/Prime-VMS-Public/)
+[![Latest version](https://img.shields.io/github/v/release/Daniel1ux/Prime-VMS-Public?label=version&color=c5e82e&labelColor=0a1626)](https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest)
+![Windows 10 and 11](https://img.shields.io/badge/Windows-10%20%7C%2011-0b2545)
 
-</div>
+## Overview
 
-**PrimeVMS** is a professional **video management system (VMS)** for Windows — free
-**CCTV / NVR software** to record, watch live and play back **IP cameras** from any
-brand that supports **ONVIF or RTSP**. The VMS core is **free to use**, with no
-per-camera license. You only pay for what adds value: **AI video analytics**,
-**cloud access** and **high availability** — on affordable plans.
+PrimeVMS is made of three components that you can install on one computer or spread
+across your network:
 
-Made by [Prime Building Technology](https://primebr.com.br/), available in
-**English, Portuguese and Spanish**.
-
----
-
-## Why PrimeVMS
-
-| | PrimeVMS | Traditional VMS |
-|---|---|---|
-| Core license | **Free** — no per-camera fees | Paid per camera / channel |
-| Cameras | **Any ONVIF / RTSP camera** | Often tied to a brand |
-| Deployment | **One installer**: single PC → distributed servers | Different products / editions |
-| Updates | **One click inside the app**, with automatic rollback | Download and reinstall |
-| Advanced features | **Modules on affordable plans** — pay only for what you use | Expensive bundles |
-| Languages | **English · Português · Español** | Varies |
-
-## Features — free core
-
-- 📹 **Works with your cameras** — automatic **ONVIF discovery** and RTSP path
-  detection (just enter the camera's user and password), with built-in RTSP path
-  patterns for Hikvision/Annke, Dahua/Intelbras, Axis and Reolink, plus generic ONVIF/RTSP.
-- 🔴 **24/7 recording** to disk (segmented MP4, no re-encoding), with a recording
-  catalog and **retention by days**.
-- 🖥️ **Live view** in layouts up to 4×4, full screen, **multi-monitor** and video
-  wall, with **GPU-accelerated decoding**.
-- ⏱️ **Playback** with a 24 h timeline and zoom, **bookmarks**, synchronized
-  multi-camera playback and on-screen date/time.
-- 📤 **Export** of images and video with **anti-tamper watermark** (logo + date/time).
-- 👥 **Users and roles** (administrator, supervisor, operator) enforced on the server.
-- 🏢 **Scales with you** — everything on one PC, or a **distributed** setup with a
-  central server, several recording servers and many operator stations.
-- 🔄 **Automatic updates** — check for updates inside the app; only what changed is
-  downloaded, digitally signed, with automatic rollback if anything fails.
-- 🌐 **Three languages** — English, Portuguese and Spanish (switch in the app).
-
-## Paid modules — affordable plans
-
-| Module | Status |
+| Component | Role |
 |---|---|
-| 🤖 **AI video analytics** — people counting | ✅ Available |
-| 🤖 More analytics — object detection, line crossing/intrusion, loitering, queue detection, fire & smoke, PPE, face recognition, license plate recognition (LPR), abandoned objects, smart search | 🛠️ In development |
-| ☁️ **Prime Cloud** — remote access and mobile **without opening ports** (no NAT setup) | 🔜 Coming soon |
-| 🛡️ **High availability** — redundant central server (master/standby) | 🔜 Coming soon |
+| System Manager | Central server. Manages cameras, users, permissions and site settings. Runs as a Windows service. |
+| Storage | Recording server. Records cameras to disk, applies retention and serves live and recorded video. Runs as a Windows service. |
+| Workstation | Operator application. Live layouts, playback with timeline and export. |
 
-Plans are priced to fit small and mid-size projects.
-**[Contact Prime](https://primebr.com.br/)** for a quote.
+All three come in a single installer. The apps are available in English, Portuguese
+and Spanish.
 
-## What's in the installer
+## Features
 
-One installer (`PrimeVMS-Setup-X.Y.Z.exe`) with three components — you choose what
-to install on each computer:
+Included in the free version:
 
-| Component | What it does |
+- Automatic discovery of ONVIF cameras and of the RTSP stream path. Only the camera
+  user name and password are needed. Built-in path patterns for Hikvision, Annke,
+  Dahua, Intelbras, Axis and Reolink.
+- Continuous recording to disk in segmented MP4, without re-encoding, with retention by
+  days.
+- Live view in layouts up to 4×4, full screen, multiple monitors and video wall, with
+  hardware-accelerated decoding.
+- Playback with a 24-hour timeline, zoom, bookmarks and synchronized playback of
+  several cameras.
+- Image and video export with a watermark (logo, date and time).
+- Users with administrator, supervisor and operator roles, enforced by the server.
+- Single-computer or distributed deployment with several recording servers.
+- Updates from inside the app.
+
+## Paid modules
+
+| Module | Availability |
 |---|---|
-| **System Manager** | Central server: cameras, users and permissions, site settings. Runs as a Windows service. |
-| **Storage** | Recording server: records cameras, stores and serves recordings. Runs as a Windows service. |
-| **Workstation** | Operator station: live layouts, playback timeline, image/video export. |
+| AI video analytics: people counting | Available |
+| Additional analytics: object detection, line crossing, loitering, queue detection, fire and smoke, PPE, face recognition, license plate recognition, abandoned objects, smart search | In development |
+| Prime Cloud: remote and mobile access without opening ports | Coming soon |
+| High availability: redundant central server | Coming soon |
 
-Services start with Windows and restart automatically if they stop. No .NET or other
-runtime needs to be installed.
+Plans are designed for small and mid-size projects.
+[Contact Prime Building Technology](https://primebr.com.br/) for a quote.
 
 ## Requirements
 
-- **Windows 10 or 11, 64-bit**.
-- **Administrator** permission to install and update.
-- **IP cameras with ONVIF/RTSP** on the same network.
-- Storage: a disk with room for the retention you want (recordings live outside the
-  program folder).
-- Workstation: a GPU with hardware video decoding is recommended for large layouts.
+- Windows 10 or Windows 11, 64-bit.
+- Administrator rights to install and update.
+- IP cameras with ONVIF or RTSP on the same network.
+- For Storage, a disk sized for the retention you need. Recordings are kept outside
+  the program folder.
+- For Workstation, a graphics card with hardware video decoding is recommended for
+  large layouts.
 
 ## Installation
 
-1. Download `PrimeVMS-Setup-X.Y.Z.exe` from the [latest release](https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest).
-2. Run it, choose the language (English, Português or Español) and accept the
-   administrator prompt.
-   > The installer is not code-signed yet. If Windows shows *"Windows protected your
-   > PC"*, click **More info → Run anyway**.
-3. Choose the **deployment model**:
-   - **A single computer (everything on this PC)** — System Manager, Storage and
-     Workstation already connected. For small projects (up to about 16 cameras), no
-     recording redundancy.
-   - **Distributed installation** — select each computer's role: System Manager on a
-     dedicated server, Storage on one or more recording servers, Workstation on the
-     operator computers.
-4. Open the **Workstation** (or the **System Manager Console**).
+1. Download `PrimeVMS-Setup-X.Y.Z.exe` from the
+   [latest release](https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest).
+2. Run the installer, choose a language and accept the administrator prompt.
+   The installer is not code-signed yet. If Windows SmartScreen appears, select
+   **More info** and then **Run anyway**.
+3. Choose a deployment model:
+   - **Single computer.** Installs System Manager, Storage and Workstation, already
+     connected to each other. Suitable for up to about 16 cameras, without recording
+     redundancy.
+   - **Distributed.** Select the roles for this computer: System Manager on a dedicated
+     server, Storage on one or more recording servers and Workstation on the operator
+     computers.
+4. Open Workstation or the System Manager Console.
 
-**First login:** user `admin`, password `admin`. **Change the password right after
-signing in.** The language chosen in the installer becomes the apps' language; each
-user can change it at any time with the 🌐 **PT · EN · ES** selector.
+Sign in with user `admin` and password `admin`, then change the password.
+
+The language selected in the installer becomes the default for the apps. Each user can
+change it from the language selector on the sign-in screen or in the sidebar.
 
 ### Network ports
 
 | Port (TCP) | Service |
 |---|---|
-| **58100** | System Manager |
-| **58200** | Storage |
+| 58100 | System Manager |
+| 58200 | Storage |
 
-The installer opens these ports in Windows Firewall. In distributed installations,
-make sure the network allows them between servers and Workstations.
+The installer adds these rules to Windows Firewall. In a distributed deployment, make
+sure the network allows these ports between the servers and the Workstations.
 
 ## Updates
 
-Since version **1.0.4**, PrimeVMS updates itself **from inside the apps**:
+Starting with version 1.0.4, PrimeVMS updates from inside the apps.
 
-1. In the Workstation, System Manager Console or Storage Console, click
-   **⟳ Check for updates** (sidebar or login screen). The apps also check on their own
-   and show a **new version** notice.
-2. Read what's new and click **Update now** (asks for administrator permission).
-3. PrimeVMS updates **everything installed on that computer at once**: stops the
-   services, closes the apps, installs, restarts the services, checks they respond on
-   the new version and reopens the app. It takes about a minute.
+1. In Workstation, System Manager Console or Storage Console, select
+   **Check for updates** in the sidebar or on the sign-in screen. The apps also check
+   automatically and show when a new version is available.
+2. Review the release notes and select **Update now**. Administrator rights are
+   required.
+3. PrimeVMS updates every component installed on the computer. It stops the services,
+   closes the apps, installs the new version, starts the services, checks that they
+   respond and reopens the app. The process takes about a minute.
 
-- **Downloads only what changed** — usually about 1 MB, not the whole installer.
-- **Digitally signed** — altered or corrupted files are rejected before any change.
-- **Rolls back automatically** — if a service fails to start (or power drops midway),
-  the previous version is restored.
-- **Your data stays** — settings, cameras, users and recordings are kept; the database
-  is upgraded automatically.
+How updates work:
 
-> Recording pauses for a few seconds during an update. On critical sites, update
-> during quiet hours.
+- Only changed files are downloaded, usually about 1 MB.
+- Each release is digitally signed. Modified or corrupted files are rejected before
+  anything is changed.
+- If a service fails to start, or the computer loses power during the update, the
+  previous version is restored automatically.
+- Settings, cameras, users and recordings are kept. The database is upgraded
+  automatically.
 
-**Offline update:** copy a version's update files (`update-manifest.json`,
-`update-manifest.json.sig` and the `pack-*.zip` files) to a folder and run, as
-administrator:
+Recording pauses for a few seconds during an update. On critical sites, update during
+low-activity hours.
+
+### Offline update
+
+Copy the update files of a release (`update-manifest.json`, `update-manifest.json.sig`
+and the `pack-*.zip` files) to a folder, then run as administrator:
 
 ```
 "C:\Program Files\Prime VMS\Updater\PrimeVMS Updater.exe" --apply --source folder:D:\primevms-update
@@ -156,17 +139,17 @@ administrator:
 
 | Version | Date | Installer | In-app updates |
 |---|---|---|---|
-| **[1.0.5](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.5)** ⭐ recommended | 2026-10-18 | `PrimeVMS-Setup-1.0.5.exe` (315 MB) | ✅ Yes |
-| [1.0.4](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.4) | 2026-10-18 | `PrimeVMS-Setup-1.0.4.exe` (314 MB) | ✅ Yes |
-| [1.0.3](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.3) | 2026-10-17 | `PrimeVMS-Setup-1.0.3.exe` (314 MB) | ⚠️ Old channel — install 1.0.5 |
-| [1.0.2](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.2) | 2026-06-06 | `PrimeVMS-Setup-1.0.2.exe` (424 MB) | ❌ No |
-| [1.0.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.0) | 2026-06-01 | `PrimeVMS-Setup-1.0.0.exe` (265 MB) | ❌ No |
+| [1.0.5](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.5) (recommended) | 2026-10-18 | `PrimeVMS-Setup-1.0.5.exe`, 315 MB | Yes |
+| [1.0.4](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.4) | 2026-10-18 | `PrimeVMS-Setup-1.0.4.exe`, 314 MB | Yes |
+| [1.0.3](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.3) | 2026-10-17 | `PrimeVMS-Setup-1.0.3.exe`, 314 MB | No (install 1.0.5) |
+| [1.0.2](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.2) | 2026-06-06 | `PrimeVMS-Setup-1.0.2.exe`, 424 MB | No |
+| [1.0.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.0) | 2026-06-01 | `PrimeVMS-Setup-1.0.0.exe`, 265 MB | No |
 
-Older versions are kept for reference only. **If you have 1.0.3 or older**, install the
-latest version with the setup once — your data is kept — and from then on update
-inside the app. Release notes are on each [release page](https://github.com/Daniel1ux/Prime-VMS-Public/releases).
+Earlier versions are kept for reference. If you run version 1.0.3 or earlier, install
+the latest version with the installer once. Your data is kept, and later versions
+update from inside the app.
 
-### Verify your download (optional)
+### Verify the download
 
 ```powershell
 Get-FileHash .\PrimeVMS-Setup-1.0.5.exe -Algorithm SHA256
@@ -182,45 +165,44 @@ Get-FileHash .\PrimeVMS-Setup-1.0.5.exe -Algorithm SHA256
 
 ## FAQ
 
-**Is PrimeVMS really free?**
-Yes. The VMS core — live view, recording, playback, export, users, distributed
-servers and updates — is free, with no per-camera license fees. Only the advanced
-modules (AI analytics, Prime Cloud, high availability) are paid, on affordable plans.
+**Is PrimeVMS free?**
+Yes. Live view, recording, playback, export, users, distributed deployment and updates
+are free, with no per-camera license. AI analytics, Prime Cloud and high availability
+are paid modules.
 
 **Which cameras are supported?**
-Any IP camera with **ONVIF** or **RTSP**, from any manufacturer. PrimeVMS finds ONVIF
-cameras on the network and discovers the stream path by itself.
+Any IP camera with ONVIF or RTSP. PrimeVMS finds ONVIF cameras on the network and
+detects the stream path.
 
-**Is it an NVR replacement?**
-PrimeVMS records IP cameras directly on a Windows PC or server (software NVR), with
-retention by days, and also works alongside existing recorders that expose RTSP.
+**Can it replace an NVR?**
+PrimeVMS records IP cameras directly on a Windows PC or server, with retention by days.
+It can also record from existing recorders that provide RTSP streams.
 
-**How many cameras can I use?**
-There is no license limit per camera in the free core. The practical limit is your
-hardware and network; for larger projects, use the distributed installation with
-several recording servers.
+**How many cameras can I add?**
+The free version has no per-camera limit. The practical limit depends on hardware and
+network. For larger sites, use a distributed deployment with several recording servers.
 
 **Which languages are available?**
-English, Portuguese (Brazil) and Spanish — in the apps, the installer and the
-release notes.
+English, Portuguese (Brazil) and Spanish, in the apps, the installer and the release
+notes.
 
 ## Uninstall
 
-**Windows Settings → Apps → PrimeVMS → Uninstall** (or the "Uninstall PrimeVMS"
-shortcut in the Start menu). Services and firewall rules are removed. Data (database
-and recordings) stays in `C:\ProgramData\Prime VMS` and in the recording folder you
-chose, and is **not** deleted automatically.
+Open **Settings > Apps > PrimeVMS > Uninstall**, or use the "Uninstall PrimeVMS"
+shortcut in the Start menu. Services and firewall rules are removed. The database and
+recordings in `C:\ProgramData\Prime VMS` and in the selected recording folder are not
+deleted.
 
 ## License and support
 
-Copyright © 2026 **Prime Building Technology**. All rights reserved.
-The VMS core (System Manager, Storage and Workstation) is free to use for managing
-video at the licensee's site; AI, cloud and high-availability modules require a
-commercial license. The operator is responsible for complying with applicable law
-(including data-protection laws such as the LGPD/GDPR) when capturing, recording and
-processing images.
+Copyright © 2026 Prime Building Technology. All rights reserved.
 
-PrimeVMS includes third-party components under their own licenses, such as
+The VMS core (System Manager, Storage and Workstation) is free to use for video
+management at the licensee's site. AI, cloud and high-availability modules require a
+commercial license. The operator is responsible for complying with applicable law,
+including data protection laws, when capturing, recording and processing images.
+
+PrimeVMS includes third-party components under their own licenses, including
 [FFmpeg](https://ffmpeg.org/) and [go2rtc](https://github.com/AlexxIT/go2rtc).
 
-**Support and contact:** [primebr.com.br](https://primebr.com.br/)
+Support: [primebr.com.br](https://primebr.com.br/)
