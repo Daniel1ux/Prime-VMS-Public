@@ -53,8 +53,8 @@ Incluidas en la versión gratuita:
 
 | Módulo | Disponibilidad |
 |---|---|
-| Analíticas de video con IA: conteo de personas | Disponible |
-| Otras analíticas: detección de objetos, cruce de línea, merodeo, detección de filas, fuego y humo, EPP, reconocimiento facial, lectura de placas, objetos abandonados, búsqueda inteligente | En desarrollo |
+| Analíticas de video con IA: conteo de personas y reconocimiento facial (AI Engine) | Disponible, gratuito en la fase de pruebas |
+| Otras analíticas: detección de objetos, cruce de línea, merodeo, detección de filas, fuego y humo, EPP, lectura de placas, objetos abandonados, búsqueda inteligente | En desarrollo |
 | Prime Cloud: acceso remoto y móvil sin abrir puertos | Próximamente |
 | Alta disponibilidad: servidor central redundante | Próximamente |
 
@@ -147,10 +147,11 @@ administrador:
 
 | Versión | Fecha | Instalador | Actualización en la app |
 |---|---|---|---|
-| [1.0.6](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.6) (recomendada) | 18/10/2026 | `PrimeVMS-Setup-1.0.6.exe`, 315 MB | Sí |
+| [1.1.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.1.0) (recomendada) | 18/10/2026 | `PrimeVMS-Setup-1.1.0.exe`, 493 MB | Sí |
+| [1.0.6](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.6) | 18/10/2026 | `PrimeVMS-Setup-1.0.6.exe`, 315 MB | Sí |
 | [1.0.5](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.5) | 18/10/2026 | `PrimeVMS-Setup-1.0.5.exe`, 315 MB | Sí |
 | [1.0.4](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.4) | 18/10/2026 | `PrimeVMS-Setup-1.0.4.exe`, 314 MB | Sí |
-| [1.0.3](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.3) | 17/10/2026 | `PrimeVMS-Setup-1.0.3.exe`, 314 MB | No (instale la 1.0.6) |
+| [1.0.3](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.3) | 17/10/2026 | `PrimeVMS-Setup-1.0.3.exe`, 314 MB | No (instale la 1.1.0) |
 | [1.0.2](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.2) | 06/06/2026 | `PrimeVMS-Setup-1.0.2.exe`, 424 MB | No |
 | [1.0.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.0) | 01/06/2026 | `PrimeVMS-Setup-1.0.0.exe`, 265 MB | No |
 
@@ -161,11 +162,12 @@ conservan y las versiones siguientes se actualizan desde la aplicación.
 ### Verificar la descarga
 
 ```powershell
-Get-FileHash .\PrimeVMS-Setup-1.0.6.exe -Algorithm SHA256
+Get-FileHash .\PrimeVMS-Setup-1.1.0.exe -Algorithm SHA256
 ```
 
 | Archivo | SHA-256 |
 |---|---|
+| `PrimeVMS-Setup-1.1.0.exe` | `A10DAC26CA323654E718259BE15B9E6D1442D640C2D9452984F3AF9B934E7B02` |
 | `PrimeVMS-Setup-1.0.6.exe` | `B1245763AADB7699C894117A781E11C2044F41A3E84211A3C6E634CA41E087C8` |
 | `PrimeVMS-Setup-1.0.5.exe` | `97BAA1164289F40D35D530A1C9AC7A338E73CAA4197B4BF06473DD2FCCFFF746` |
 | `PrimeVMS-Setup-1.0.4.exe` | `405B120D9E5BD56915E8CDE0A65D2D55CFD6A9020EB49992CE4177E1E3D71ED4` |
@@ -178,7 +180,8 @@ Get-FileHash .\PrimeVMS-Setup-1.0.6.exe -Algorithm SHA256
 **¿PrimeVMS es gratuito?**
 Sí. Video en vivo, grabación, reproducción, exportación, usuarios, instalación
 distribuida y actualizaciones son gratuitos, sin licencia por cámara. Las analíticas
-con IA, Prime Cloud y la alta disponibilidad son módulos pagos.
+con IA también son gratuitas en la fase de pruebas actual. Prime Cloud y la alta
+disponibilidad serán módulos pagos.
 
 **¿Qué cámaras son compatibles?**
 Cualquier cámara IP con ONVIF o RTSP. PrimeVMS encuentra las cámaras ONVIF en la red y
@@ -209,8 +212,9 @@ carpeta de grabación elegida no se borran.
 Copyright © 2026 Prime Building Technology. Todos los derechos reservados.
 
 El núcleo VMS (System Manager, Storage y Workstation) es de uso gratuito para la
-gestión de video del sitio del licenciatario. Los módulos de IA, nube y alta
-disponibilidad requieren licencia comercial. El operador es responsable de cumplir la
+gestión de video del sitio del licenciatario. Los módulos de nube y alta
+disponibilidad requieren licencia comercial; los módulos de IA son gratuitos en la fase
+de pruebas. El operador es responsable de cumplir la
 legislación aplicable, incluidas las leyes de protección de datos, al captar, grabar y
 tratar imágenes.
 

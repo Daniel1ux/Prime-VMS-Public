@@ -52,8 +52,8 @@ Incluídos na versão gratuita:
 
 | Módulo | Disponibilidade |
 |---|---|
-| Analíticos de vídeo com IA: contagem de pessoas | Disponível |
-| Outros analíticos: detecção de objetos, cruzamento de linha, permanência indevida, filas, fogo e fumaça, EPI, reconhecimento facial, leitura de placas, objetos abandonados, busca inteligente | Em desenvolvimento |
+| Analíticos de vídeo com IA: contagem de pessoas e reconhecimento facial (AI Engine) | Disponível, gratuito na fase de testes |
+| Outros analíticos: detecção de objetos, cruzamento de linha, permanência indevida, filas, fogo e fumaça, EPI, leitura de placas, objetos abandonados, busca inteligente | Em desenvolvimento |
 | Prime Cloud: acesso remoto e pelo celular sem abrir portas | Em breve |
 | Alta disponibilidade: servidor central redundante | Em breve |
 
@@ -142,10 +142,11 @@ administrador:
 
 | Versão | Data | Instalador | Atualização pelo app |
 |---|---|---|---|
-| [1.0.6](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.6) (recomendada) | 18/10/2026 | `PrimeVMS-Setup-1.0.6.exe`, 315 MB | Sim |
+| [1.1.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.1.0) (recomendada) | 18/10/2026 | `PrimeVMS-Setup-1.1.0.exe`, 493 MB | Sim |
+| [1.0.6](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.6) | 18/10/2026 | `PrimeVMS-Setup-1.0.6.exe`, 315 MB | Sim |
 | [1.0.5](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.5) | 18/10/2026 | `PrimeVMS-Setup-1.0.5.exe`, 315 MB | Sim |
 | [1.0.4](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.4) | 18/10/2026 | `PrimeVMS-Setup-1.0.4.exe`, 314 MB | Sim |
-| [1.0.3](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.3) | 17/10/2026 | `PrimeVMS-Setup-1.0.3.exe`, 314 MB | Não (instale a 1.0.6) |
+| [1.0.3](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.3) | 17/10/2026 | `PrimeVMS-Setup-1.0.3.exe`, 314 MB | Não (instale a 1.1.0) |
 | [1.0.2](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.2) | 06/06/2026 | `PrimeVMS-Setup-1.0.2.exe`, 424 MB | Não |
 | [1.0.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.0) | 01/06/2026 | `PrimeVMS-Setup-1.0.0.exe`, 265 MB | Não |
 
@@ -156,11 +157,12 @@ mantidos e as versões seguintes são atualizadas pelo app.
 ### Conferir o download
 
 ```powershell
-Get-FileHash .\PrimeVMS-Setup-1.0.6.exe -Algorithm SHA256
+Get-FileHash .\PrimeVMS-Setup-1.1.0.exe -Algorithm SHA256
 ```
 
 | Arquivo | SHA-256 |
 |---|---|
+| `PrimeVMS-Setup-1.1.0.exe` | `A10DAC26CA323654E718259BE15B9E6D1442D640C2D9452984F3AF9B934E7B02` |
 | `PrimeVMS-Setup-1.0.6.exe` | `B1245763AADB7699C894117A781E11C2044F41A3E84211A3C6E634CA41E087C8` |
 | `PrimeVMS-Setup-1.0.5.exe` | `97BAA1164289F40D35D530A1C9AC7A338E73CAA4197B4BF06473DD2FCCFFF746` |
 | `PrimeVMS-Setup-1.0.4.exe` | `405B120D9E5BD56915E8CDE0A65D2D55CFD6A9020EB49992CE4177E1E3D71ED4` |
@@ -172,8 +174,8 @@ Get-FileHash .\PrimeVMS-Setup-1.0.6.exe -Algorithm SHA256
 
 **O PrimeVMS é gratuito?**
 Sim. Ao vivo, gravação, playback, exportação, usuários, instalação distribuída e
-atualizações são gratuitos, sem licença por câmera. Analíticos com IA, Prime Cloud e
-alta disponibilidade são módulos pagos.
+atualizações são gratuitos, sem licença por câmera. Os analíticos com IA também são
+gratuitos na fase de testes atual. Prime Cloud e alta disponibilidade serão módulos pagos.
 
 **Quais câmeras são compatíveis?**
 Qualquer câmera IP com ONVIF ou RTSP. O PrimeVMS encontra as câmeras ONVIF na rede e
@@ -203,8 +205,8 @@ gravação escolhida não são apagados.
 Copyright © 2026 Prime Building Technology. Todos os direitos reservados.
 
 O núcleo VMS (System Manager, Storage e Workstation) é de uso gratuito para a gestão
-de vídeo do empreendimento do licenciado. Os módulos de IA, nuvem e alta
-disponibilidade exigem licença comercial. O operador é responsável por cumprir a
+de vídeo do empreendimento do licenciado. Os módulos de nuvem e alta disponibilidade
+exigem licença comercial; os módulos de IA são gratuitos na fase de testes. O operador é responsável por cumprir a
 legislação aplicável, inclusive a LGPD, ao captar, gravar e tratar imagens.
 
 O PrimeVMS inclui componentes de terceiros sob suas próprias licenças, como

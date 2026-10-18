@@ -51,8 +51,8 @@ Included in the free version:
 
 | Module | Availability |
 |---|---|
-| AI video analytics: people counting | Available |
-| Additional analytics: object detection, line crossing, loitering, queue detection, fire and smoke, PPE, face recognition, license plate recognition, abandoned objects, smart search | In development |
+| AI video analytics: people counting and face recognition (AI Engine) | Available, free during the testing phase |
+| Additional analytics: object detection, line crossing, loitering, queue detection, fire and smoke, PPE, license plate recognition, abandoned objects, smart search | In development |
 | Prime Cloud: remote and mobile access without opening ports | Coming soon |
 | High availability: redundant central server | Coming soon |
 
@@ -139,10 +139,11 @@ and the `pack-*.zip` files) to a folder, then run as administrator:
 
 | Version | Date | Installer | In-app updates |
 |---|---|---|---|
-| [1.0.6](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.6) (recommended) | 2026-10-18 | `PrimeVMS-Setup-1.0.6.exe`, 315 MB | Yes |
+| [1.1.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.1.0) (recommended) | 2026-10-18 | `PrimeVMS-Setup-1.1.0.exe`, 493 MB | Yes |
+| [1.0.6](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.6) | 2026-10-18 | `PrimeVMS-Setup-1.0.6.exe`, 315 MB | Yes |
 | [1.0.5](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.5) | 2026-10-18 | `PrimeVMS-Setup-1.0.5.exe`, 315 MB | Yes |
 | [1.0.4](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.4) | 2026-10-18 | `PrimeVMS-Setup-1.0.4.exe`, 314 MB | Yes |
-| [1.0.3](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.3) | 2026-10-17 | `PrimeVMS-Setup-1.0.3.exe`, 314 MB | No (install 1.0.6) |
+| [1.0.3](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.3) | 2026-10-17 | `PrimeVMS-Setup-1.0.3.exe`, 314 MB | No (install 1.1.0) |
 | [1.0.2](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.2) | 2026-06-06 | `PrimeVMS-Setup-1.0.2.exe`, 424 MB | No |
 | [1.0.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.0) | 2026-06-01 | `PrimeVMS-Setup-1.0.0.exe`, 265 MB | No |
 
@@ -153,11 +154,12 @@ update from inside the app.
 ### Verify the download
 
 ```powershell
-Get-FileHash .\PrimeVMS-Setup-1.0.6.exe -Algorithm SHA256
+Get-FileHash .\PrimeVMS-Setup-1.1.0.exe -Algorithm SHA256
 ```
 
 | File | SHA-256 |
 |---|---|
+| `PrimeVMS-Setup-1.1.0.exe` | `A10DAC26CA323654E718259BE15B9E6D1442D640C2D9452984F3AF9B934E7B02` |
 | `PrimeVMS-Setup-1.0.6.exe` | `B1245763AADB7699C894117A781E11C2044F41A3E84211A3C6E634CA41E087C8` |
 | `PrimeVMS-Setup-1.0.5.exe` | `97BAA1164289F40D35D530A1C9AC7A338E73CAA4197B4BF06473DD2FCCFFF746` |
 | `PrimeVMS-Setup-1.0.4.exe` | `405B120D9E5BD56915E8CDE0A65D2D55CFD6A9020EB49992CE4177E1E3D71ED4` |
@@ -169,8 +171,8 @@ Get-FileHash .\PrimeVMS-Setup-1.0.6.exe -Algorithm SHA256
 
 **Is PrimeVMS free?**
 Yes. Live view, recording, playback, export, users, distributed deployment and updates
-are free, with no per-camera license. AI analytics, Prime Cloud and high availability
-are paid modules.
+are free, with no per-camera license. AI analytics are also free during the current
+testing phase. Prime Cloud and high availability will be paid modules.
 
 **Which cameras are supported?**
 Any IP camera with ONVIF or RTSP. PrimeVMS finds ONVIF cameras on the network and
@@ -200,8 +202,8 @@ deleted.
 Copyright © 2026 Prime Building Technology. All rights reserved.
 
 The VMS core (System Manager, Storage and Workstation) is free to use for video
-management at the licensee's site. AI, cloud and high-availability modules require a
-commercial license. The operator is responsible for complying with applicable law,
+management at the licensee's site. Cloud and high-availability modules require a
+commercial license; AI modules are free during the testing phase. The operator is responsible for complying with applicable law,
 including data protection laws, when capturing, recording and processing images.
 
 PrimeVMS includes third-party components under their own licenses, including
