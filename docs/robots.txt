@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://daniel1ux.github.io/Prime-VMS-Public/sitemap.xml
