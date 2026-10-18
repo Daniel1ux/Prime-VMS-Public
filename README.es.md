@@ -53,8 +53,8 @@ Incluidas en la versión gratuita:
 
 | Módulo | Disponibilidad |
 |---|---|
-| Analíticas de video con IA: conteo de personas y reconocimiento facial (AI Engine) | Disponible, gratuito en la fase de pruebas |
-| Otras analíticas: detección de objetos, cruce de línea, merodeo, detección de filas, fuego y humo, EPP, lectura de placas, objetos abandonados, búsqueda inteligente | En desarrollo |
+| Analíticas de video con IA: conteo de personas, reconocimiento facial y lectura de placas Mercosur, con modo de prueba con videos de ejemplo (AI Engine) | Disponible, gratuito en la fase de pruebas |
+| Otras analíticas: detección de objetos, cruce de línea, merodeo, detección de filas, fuego y humo, EPP, objetos abandonados, búsqueda inteligente | En desarrollo |
 | Prime Cloud: acceso remoto y móvil sin abrir puertos | Próximamente |
 | Alta disponibilidad: servidor central redundante | Próximamente |
 
@@ -147,11 +147,12 @@ administrador:
 
 | Versión | Fecha | Instalador | Actualización en la app |
 |---|---|---|---|
-| [1.1.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.1.0) (recomendada) | 18/10/2026 | `PrimeVMS-Setup-1.1.0.exe`, 493 MB | Sí |
+| [1.2.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.2.0) (recomendada) | 18/10/2026 | `PrimeVMS-Setup-1.2.0.exe`, 493 MB | Sí |
+| [1.1.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.1.0) | 18/10/2026 | `PrimeVMS-Setup-1.1.0.exe`, 493 MB | Sí |
 | [1.0.6](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.6) | 18/10/2026 | `PrimeVMS-Setup-1.0.6.exe`, 315 MB | Sí |
 | [1.0.5](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.5) | 18/10/2026 | `PrimeVMS-Setup-1.0.5.exe`, 315 MB | Sí |
 | [1.0.4](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.4) | 18/10/2026 | `PrimeVMS-Setup-1.0.4.exe`, 314 MB | Sí |
-| [1.0.3](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.3) | 17/10/2026 | `PrimeVMS-Setup-1.0.3.exe`, 314 MB | No (instale la 1.1.0) |
+| [1.0.3](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.3) | 17/10/2026 | `PrimeVMS-Setup-1.0.3.exe`, 314 MB | No (instale la 1.2.0) |
 | [1.0.2](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.2) | 06/06/2026 | `PrimeVMS-Setup-1.0.2.exe`, 424 MB | No |
 | [1.0.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.0) | 01/06/2026 | `PrimeVMS-Setup-1.0.0.exe`, 265 MB | No |
 
@@ -162,11 +163,12 @@ conservan y las versiones siguientes se actualizan desde la aplicación.
 ### Verificar la descarga
 
 ```powershell
-Get-FileHash .\PrimeVMS-Setup-1.1.0.exe -Algorithm SHA256
+Get-FileHash .\PrimeVMS-Setup-1.2.0.exe -Algorithm SHA256
 ```
 
 | Archivo | SHA-256 |
 |---|---|
+| `PrimeVMS-Setup-1.2.0.exe` | `431926639B594119DAFA7CE3C0BA416A16D4D01367AD8AC41868C82FEE70FC33` |
 | `PrimeVMS-Setup-1.1.0.exe` | `A10DAC26CA323654E718259BE15B9E6D1442D640C2D9452984F3AF9B934E7B02` |
 | `PrimeVMS-Setup-1.0.6.exe` | `B1245763AADB7699C894117A781E11C2044F41A3E84211A3C6E634CA41E087C8` |
 | `PrimeVMS-Setup-1.0.5.exe` | `97BAA1164289F40D35D530A1C9AC7A338E73CAA4197B4BF06473DD2FCCFFF746` |
