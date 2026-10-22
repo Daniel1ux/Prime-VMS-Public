@@ -1,1 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#c5e82e"/><text x="32" y="45" font-family="Segoe UI,Arial,sans-serif" font-size="40" font-weight="900" text-anchor="middle" fill="#0a1626">P</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+<defs><linearGradient id="tile" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="#12253C"/><stop offset="1" stop-color="#0A1626"/></linearGradient></defs>
+<rect x="8" y="8" width="1008" height="1008" rx="224" fill="url(#tile)"/>
+<rect x="12" y="12" width="1000" height="1000" rx="220" fill="none" stroke="#22395A" stroke-width="8"/>
+<svg x="192" y="222" width="640" height="579.270072992701" viewBox="0 0 137 124"><defs>
+    <linearGradient id="base" gradientUnits="userSpaceOnUse" x1="136" y1="0" x2="0" y2="124">
+      <stop offset="0" stop-color="#D3F046"/><stop offset=".5" stop-color="#C5E82E"/><stop offset="1" stop-color="#B5DA20"/>
+    </linearGradient>
+    <linearGradient id="shadowLeft" gradientUnits="userSpaceOnUse" x1="38.8" y1="54.6" x2="24.0" y2="24.5"><stop offset="0" stop-color="#1E2A00" stop-opacity="0"/><stop offset="1" stop-color="#1E2A00" stop-opacity=".46"/></linearGradient>
+    <linearGradient id="shadowRight" gradientUnits="userSpaceOnUse" x1="94.9" y1="63.4" x2="112.9" y2="100.2"><stop offset="0" stop-color="#1E2A00" stop-opacity="0"/><stop offset="1" stop-color="#1E2A00" stop-opacity=".40"/></linearGradient>
+    <linearGradient id="creaseLeft" gradientUnits="userSpaceOnUse" x1="25" y1="42.8" x2="21.4" y2="47"><stop offset="0" stop-color="#1E2A00" stop-opacity=".32"/><stop offset="1" stop-color="#1E2A00" stop-opacity="0"/></linearGradient>
+    <linearGradient id="creaseRight" gradientUnits="userSpaceOnUse" x1="110" y1="76.3" x2="113.6" y2="72.1"><stop offset="0" stop-color="#1E2A00" stop-opacity=".28"/><stop offset="1" stop-color="#1E2A00" stop-opacity="0"/></linearGradient>
+    <clipPath id="shape"><path id="silhouette" d="
+      M1.5 123.5 L33 107 L38.8 54.6 L103.32 109.82
+      A14.9 14.9 0 0 0 127.86 99.74
+      L136 1.5 L99.5 16.7 L94.9 63.4 L36.19 13.18
+      A14.9 14.9 0 0 0 11.67 23 Z"/></clipPath>
+  </defs>
+  <use href="#silhouette" fill="url(#base)"/>
+  <g clip-path="url(#shape)">
+    <path fill="url(#shadowLeft)" d="M-5 17.13 L60 72.74 L34 107.2 L-31 51.6 Z"/>
+    <path fill="url(#shadowRight)" d="M85 55 L145 106.3 L171 75.9 L111 24.6 Z"/>
+    <path fill="url(#creaseLeft)" d="M-5 17.13 L38.8 54.6 L37.9 62.6 L-31 51.6 Z"/>
+    <path fill="url(#creaseRight)" d="M94.9 63.4 L145 106.3 L171 75.9 L95.7 55.4 Z"/>
+  </g></svg>
+</svg>

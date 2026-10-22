@@ -1,6 +1,6 @@
 English · [Português](README.pt-BR.md) · [Español](README.es.md)
 
-# PrimeVMS
+# NexaVMS
 
 Free video management software (VMS) for IP cameras and CCTV on Windows. Watch live, record
 around the clock, play back and export video from any ONVIF or RTSP camera.
@@ -17,7 +17,7 @@ on affordable plans.
 
 ## Overview
 
-PrimeVMS is made of three components that you can install on one computer or spread
+NexaVMS is made of three components that you can install on one computer or spread
 across your network:
 
 | Component | Role |
@@ -102,16 +102,34 @@ change it from the language selector on the sign-in screen or in the sidebar.
 The installer adds these rules to Windows Firewall. In a distributed deployment, make
 sure the network allows these ports between the servers and the Workstations.
 
+## Nexa Player
+
+Protected exports (`.pvx`) are encrypted with a password and include an integrity check, so they
+do not open in regular video players. To watch them, use Nexa Player, free, for Windows. It opens
+`.pvx` packages, exported folders and MP4 files, and shows whether each video is intact and signed.
+
+- [Download Nexa Player (zip, no installation)](https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest/download/NexaPlayer-win-x64.zip)
+- [Download the Nexa Player installer](https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest/download/NexaPlayer-Setup.exe)
+
+1. Download `NexaPlayer-win-x64.zip`, right-click it and select **Extract All**.
+2. Open `PrimePlayer.exe` in the extracted folder. If Windows SmartScreen appears, select
+   **More info** and then **Run anyway**.
+3. Select **Open file**, choose the `.pvx` file and enter the password. The list shows whether
+   each video is intact and signed.
+
+The password is not stored in the package. Ask the person who made the export. These links always
+point to the latest version.
+
 ## Updates
 
-Starting with version 1.0.4, PrimeVMS updates from inside the apps.
+Starting with version 1.0.4, NexaVMS updates from inside the apps.
 
 1. In Workstation, System Manager Console or Storage Console, select
    **Check for updates** in the sidebar or on the sign-in screen. The apps also check
    automatically and show when a new version is available.
 2. Review the release notes and select **Update now**. Administrator rights are
    required.
-3. PrimeVMS updates every component installed on the computer. It stops the services,
+3. NexaVMS updates every component installed on the computer. It stops the services,
    closes the apps, installs the new version, starts the services, checks that they
    respond and reopens the app. The process takes about a minute.
 
@@ -141,7 +159,8 @@ and the `pack-*.zip` files) to a folder, then run as administrator:
 
 | Version | Date | Installer | In-app updates |
 |---|---|---|---|
-| [2.2.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.2.0) (recommended) | 2026-10-21 | `PrimeVMS-Setup-2.2.0.exe`, 626 MB | Yes |
+| [2.4.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.4.0) (recommended) | 2026-10-22 | `PrimeVMS-Setup-2.4.0.exe`, 633 MB | Yes |
+| [2.2.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.2.0) | 2026-10-21 | `PrimeVMS-Setup-2.2.0.exe`, 626 MB | Yes |
 | [2.1.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.1.0) | 2026-10-21 | `PrimeVMS-Setup-2.1.0.exe`, 626 MB | Yes |
 | [2.0.1](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.0.1) | 2026-10-20 | `PrimeVMS-Setup-2.0.1.exe`, 625 MB | Yes |
 | [2.0.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.0.0) | 2026-10-20 | `PrimeVMS-Setup-2.0.0.exe`, 625 MB | Yes |
@@ -150,16 +169,16 @@ and the `pack-*.zip` files) to a folder, then run as administrator:
 | [1.8.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.8.0) | 2026-10-20 | `PrimeVMS-Setup-1.8.0.exe`, 543 MB | Yes |
 | [1.7.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.7.0) | 2026-10-20 | `PrimeVMS-Setup-1.7.0.exe`, 542 MB | Yes |
 | [1.5.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.5.0) | 2026-10-19 | `PrimeVMS-Setup-1.5.0.exe`, 498 MB | Yes |
-| [1.4.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.4.0) | 2026-10-18 | `PrimeVMS-Setup-1.4.0.exe`, 497 MB | No (install 2.2.0) |
-| [1.3.1](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.3.1) | 2026-10-18 | `PrimeVMS-Setup-1.3.1.exe`, 494 MB | No (install 2.2.0) |
-| [1.3.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.3.0) | 2026-10-18 | `PrimeVMS-Setup-1.3.0.exe`, 494 MB | No (install 2.2.0) |
-| [1.2.1](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.2.1) | 2026-10-18 | `PrimeVMS-Setup-1.2.1.exe`, 493 MB | No (install 2.2.0) |
-| [1.2.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.2.0) | 2026-10-18 | `PrimeVMS-Setup-1.2.0.exe`, 493 MB | No (install 2.2.0) |
-| [1.1.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.1.0) | 2026-10-18 | `PrimeVMS-Setup-1.1.0.exe`, 493 MB | No (install 2.2.0) |
-| [1.0.6](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.6) | 2026-10-18 | `PrimeVMS-Setup-1.0.6.exe`, 315 MB | No (install 2.2.0) |
-| [1.0.5](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.5) | 2026-10-18 | `PrimeVMS-Setup-1.0.5.exe`, 315 MB | No (install 2.2.0) |
-| [1.0.4](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.4) | 2026-10-18 | `PrimeVMS-Setup-1.0.4.exe`, 314 MB | No (install 2.2.0) |
-| [1.0.3](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.3) | 2026-10-17 | `PrimeVMS-Setup-1.0.3.exe`, 314 MB | No (install 2.2.0) |
+| [1.4.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.4.0) | 2026-10-18 | `PrimeVMS-Setup-1.4.0.exe`, 497 MB | No (install 2.4.0) |
+| [1.3.1](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.3.1) | 2026-10-18 | `PrimeVMS-Setup-1.3.1.exe`, 494 MB | No (install 2.4.0) |
+| [1.3.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.3.0) | 2026-10-18 | `PrimeVMS-Setup-1.3.0.exe`, 494 MB | No (install 2.4.0) |
+| [1.2.1](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.2.1) | 2026-10-18 | `PrimeVMS-Setup-1.2.1.exe`, 493 MB | No (install 2.4.0) |
+| [1.2.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.2.0) | 2026-10-18 | `PrimeVMS-Setup-1.2.0.exe`, 493 MB | No (install 2.4.0) |
+| [1.1.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.1.0) | 2026-10-18 | `PrimeVMS-Setup-1.1.0.exe`, 493 MB | No (install 2.4.0) |
+| [1.0.6](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.6) | 2026-10-18 | `PrimeVMS-Setup-1.0.6.exe`, 315 MB | No (install 2.4.0) |
+| [1.0.5](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.5) | 2026-10-18 | `PrimeVMS-Setup-1.0.5.exe`, 315 MB | No (install 2.4.0) |
+| [1.0.4](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.4) | 2026-10-18 | `PrimeVMS-Setup-1.0.4.exe`, 314 MB | No (install 2.4.0) |
+| [1.0.3](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.3) | 2026-10-17 | `PrimeVMS-Setup-1.0.3.exe`, 314 MB | No (install 2.4.0) |
 | [1.0.2](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.2) | 2026-06-06 | `PrimeVMS-Setup-1.0.2.exe`, 424 MB | No |
 | [1.0.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.0) | 2026-06-01 | `PrimeVMS-Setup-1.0.0.exe`, 265 MB | No |
 
@@ -170,11 +189,12 @@ update from inside the app.
 ### Verify the download
 
 ```powershell
-Get-FileHash .\PrimeVMS-Setup-2.2.0.exe -Algorithm SHA256
+Get-FileHash .\PrimeVMS-Setup-2.4.0.exe -Algorithm SHA256
 ```
 
 | File | SHA-256 |
 |---|---|
+| `PrimeVMS-Setup-2.4.0.exe` | `E2B507AFBDBD440AC0D02A2097F340CF3F907F47AEF63BD42E532DD3A1A465D1` |
 | `PrimeVMS-Setup-2.2.0.exe` | `8CF877C5ADBF2343BA6F6367C52883D7343DF1B851C5FD9A56692E7156762D70` |
 | `PrimeVMS-Setup-2.1.0.exe` | `105DDD7A8E21FF7225C73A4496866636220BE2C1B3C1BE1C14323ED70C3BB9A1` |
 | `PrimeVMS-Setup-2.0.1.exe` | `D9D9BA966B4CC612DB9AB528F2990078868A69952F979048F30F112CC6D19A26` |
@@ -199,17 +219,17 @@ Get-FileHash .\PrimeVMS-Setup-2.2.0.exe -Algorithm SHA256
 
 ## FAQ
 
-**Is PrimeVMS free?**
+**Is NexaVMS free?**
 Yes. Live view, recording, playback, export, users, distributed deployment and updates
 are free, with no per-camera license. AI analytics are also free during the current
 testing phase. Prime Cloud and high availability will be paid modules.
 
 **Which cameras are supported?**
-Any IP camera with ONVIF or RTSP. PrimeVMS finds ONVIF cameras on the network and
+Any IP camera with ONVIF or RTSP. NexaVMS finds ONVIF cameras on the network and
 detects the stream path.
 
 **Can it replace an NVR?**
-PrimeVMS records IP cameras directly on a Windows PC or server, with retention by days.
+NexaVMS records IP cameras directly on a Windows PC or server, with retention by days.
 It can also record from existing recorders that provide RTSP streams.
 
 **How many cameras can I add?**
@@ -222,7 +242,7 @@ notes.
 
 ## Uninstall
 
-Open **Settings > Apps > PrimeVMS > Uninstall**, or use the "Uninstall PrimeVMS"
+Open **Settings > Apps > NexaVMS > Uninstall** (PrimeVMS in installations from before 2.4.0), or use the "Uninstall NexaVMS"
 shortcut in the Start menu. Services and firewall rules are removed. The database and
 recordings in `C:\ProgramData\Prime VMS` and in the selected recording folder are not
 deleted.
@@ -236,7 +256,7 @@ management at the licensee's site. Cloud and high-availability modules require a
 commercial license; AI modules are free during the testing phase. The operator is responsible for complying with applicable law,
 including data protection laws, when capturing, recording and processing images.
 
-PrimeVMS includes third-party components under their own licenses, including
+NexaVMS includes third-party components under their own licenses, including
 [FFmpeg](https://ffmpeg.org/) and [go2rtc](https://github.com/AlexxIT/go2rtc).
 
 Support: [primebr.com.br](https://primebr.com.br/)

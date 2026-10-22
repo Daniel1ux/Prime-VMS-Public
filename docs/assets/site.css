@@ -32,6 +32,7 @@ img { max-width: 100%; height: auto; display: block; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; color: var(--text); }
 .brand:hover { text-decoration: none; }
 .logo { width: 32px; height: 32px; border-radius: 9px; background: var(--lime); color: var(--bg); display: grid; place-items: center; font-weight: 900; font-size: 19px; }
+.logo-n { width: 32px; height: 32px; display: block; }
 .brand b { color: var(--lime); }
 .top nav { margin-left: auto; display: flex; align-items: center; gap: 18px; font-size: 14px; }
 .top nav a { color: var(--muted); }
