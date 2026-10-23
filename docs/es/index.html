@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NexaVMS | Software VMS gratuito para cámaras IP y CCTV</title>
-<meta name="description" content="Software de gestión de video (VMS) gratuito para Windows. Video en vivo, grabación continua, reproducción y exportación para cualquier cámara IP ONVIF o RTSP, sin licencia por cámara.">
+<title>NexaVMS | Software VMS para cámaras IP y CCTV</title>
+<meta name="description" content="Software de gestión de video (VMS) para Windows. Video en vivo, grabación continua, reproducción y exportación para cualquier cámara IP ONVIF o RTSP. Edición Free para hasta 16 cámaras.">
 <link rel="canonical" href="https://daniel1ux.github.io/Prime-VMS-Public/es/">
 <link rel="alternate" hreflang="en" href="https://daniel1ux.github.io/Prime-VMS-Public/">
 <link rel="alternate" hreflang="pt-BR" href="https://daniel1ux.github.io/Prime-VMS-Public/pt/">
@@ -13,8 +13,8 @@
 <meta name="theme-color" content="#0a1626">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="NexaVMS">
-<meta property="og:title" content="NexaVMS | Software VMS gratuito para cámaras IP">
-<meta property="og:description" content="Video en vivo, grabación continua, reproducción y exportación para cualquier cámara ONVIF o RTSP. Núcleo gratuito, sin licencia por cámara.">
+<meta property="og:title" content="NexaVMS | Software VMS para cámaras IP">
+<meta property="og:description" content="Video en vivo, grabación continua, reproducción y exportación para cualquier cámara ONVIF o RTSP. Free hasta 16 cámaras, Basic hasta 32 y Professional por cámara.">
 <meta property="og:url" content="https://daniel1ux.github.io/Prime-VMS-Public/es/">
 <meta property="og:image" content="https://daniel1ux.github.io/Prime-VMS-Public/assets/og.png">
 <meta property="og:locale" content="es_ES">
@@ -28,7 +28,7 @@
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
   "name": "NexaVMS",
-  "description": "Software de gestión de video (VMS) gratuito para cámaras IP: video en vivo, grabación continua, reproducción y exportación. Núcleo gratuito sin licencia por cámara. Las analíticas con IA son gratuitas en la fase de pruebas; el acceso en la nube será un módulo pago.",
+  "description": "Software de gestión de video (VMS) para cámaras IP: video en vivo, grabación continua, reproducción y exportación. Edición Free hasta 16 cámaras, Basic hasta 32 y Professional por cámara, hasta 500 por servidor. Workstations y usuarios sin límite en todas las ediciones.",
   "applicationCategory": "SecurityApplication",
   "applicationSubCategory": "Software de gestión de video (VMS)",
   "operatingSystem": "Windows 10, Windows 11",
@@ -37,7 +37,7 @@
   "downloadUrl": "https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest",
   "url": "https://daniel1ux.github.io/Prime-VMS-Public/es/",
   "image": "https://daniel1ux.github.io/Prime-VMS-Public/assets/workstation-es.png",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "category": "free" },
+  "offers": { "@type": "Offer", "name": "Nexa VMS Free", "description": "Edición Free: hasta 16 cámaras en un sitio Windows, grabación de hasta 3 días, sin plazo.", "price": "0", "priceCurrency": "USD", "category": "free", "url": "https://nexavms.io/precos" },
   "publisher": { "@type": "Organization", "name": "Prime Building Technology", "url": "https://primebr.com.br/" }
 }
 </script>
@@ -46,10 +46,12 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    { "@type": "Question", "name": "¿NexaVMS es gratuito?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Video en vivo, grabación, reproducción, exportación, usuarios, instalación distribuida y actualizaciones son gratuitos, sin licencia por cámara. Las analíticas con IA también son gratuitas en la fase de pruebas actual. Prime Cloud y la alta disponibilidad serán módulos pagos." } },
-    { "@type": "Question", "name": "¿Qué cámaras son compatibles?", "acceptedAnswer": { "@type": "Answer", "text": "Cualquier cámara IP con ONVIF o RTSP. NexaVMS encuentra las cámaras ONVIF en la red y detecta la ruta del video." } },
-    { "@type": "Question", "name": "¿Reemplaza a un NVR?", "acceptedAnswer": { "@type": "Answer", "text": "NexaVMS graba las cámaras IP directamente en una PC o servidor Windows, con retención por días. También puede grabar desde grabadores existentes que ofrecen RTSP." } },
-    { "@type": "Question", "name": "¿Cuántas cámaras puedo agregar?", "acceptedAnswer": { "@type": "Answer", "text": "La versión gratuita no tiene límite por cámara. El límite práctico depende del hardware y de la red. En sitios más grandes, use la instalación distribuida con varios servidores de grabación." } },
+    { "@type": "Question", "name": "¿Nexa VMS es gratuito?", "acceptedAnswer": { "@type": "Answer", "text": "La edición Free es gratuita y sin plazo, para hasta 16 cámaras en un sitio Windows, con grabación de hasta 3 días y una cuota de horas de IA. Basic y Professional se venden por cámara, como licencia perpetua con 1 año de mantenimiento o como suscripción. Los precios, en dólares, están en nexavms.io/precos." } },
+    { "@type": "Question", "name": "¿Necesito activar la instalación?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. La instalación se activa desde la Consola del System Manager con una cuenta Nexa VMS creada en nexavms.io. Sin activación, el sistema no graba ni muestra video. La primera activación incluye 30 días de prueba del Professional; después, la instalación vuelve a Free si no se compra una licencia." } },
+    { "@type": "Question", "name": "¿Qué cámaras son compatibles?", "acceptedAnswer": { "@type": "Answer", "text": "Cualquier cámara IP con ONVIF o RTSP. Nexa VMS encuentra las cámaras ONVIF en la red y detecta la ruta del video." } },
+    { "@type": "Question", "name": "¿Reemplaza a un NVR?", "acceptedAnswer": { "@type": "Answer", "text": "Nexa VMS graba las cámaras IP directamente en una PC o servidor Windows, con retención por días. También puede grabar desde grabadores existentes que ofrecen RTSP." } },
+    { "@type": "Question", "name": "¿Cuántas cámaras puedo agregar?", "acceptedAnswer": { "@type": "Answer", "text": "Hasta 16 en Free y hasta 32 en Basic. En Professional, la licencia es por cámara, hasta 500 por servidor, con varios Storages y Servidores de IA y servidor de respaldo (N+1). La edición Enterprise, con alta disponibilidad, llegará próximamente." } },
+    { "@type": "Question", "name": "¿Cómo se contrata la IA?", "acceptedAnswer": { "@type": "Answer", "text": "Las analíticas de video (conteo de personas, reconocimiento facial, placas, búsqueda inteligente y protección perimetral) se contratan por canal, es decir, por cámara y módulo, o como IA de sitio. Free incluye una cuota de horas de IA. En Free, el reconocimiento facial está disponible solo en el modo demostración y durante la prueba." } },
     { "@type": "Question", "name": "¿Qué idiomas hay disponibles?", "acceptedAnswer": { "@type": "Answer", "text": "Español, inglés y portugués (Brasil), en las aplicaciones, el instalador y las notas de versión." } }
   ]
 }
@@ -72,24 +74,24 @@
 <div class="hero">
   <div class="wrap">
     <span class="eyebrow">Software de gestión de video para Windows</span>
-    <h1><em>Software VMS gratuito</em> para cámaras IP</h1>
-    <p class="lead">NexaVMS es un sistema profesional de gestión de video para CCTV. Vea en vivo, grabe las 24 horas y revise las imágenes de cualquier cámara ONVIF o RTSP. El núcleo es gratuito, sin licencia por cámara, y los módulos avanzados están disponibles en planes accesibles.</p>
+    <h1><em>Software VMS</em> para cámaras IP</h1>
+    <p class="lead">Nexa VMS es un sistema profesional de gestión de video para CCTV. Vea en vivo, grabe las 24 horas y revise las imágenes de cualquier cámara ONVIF o RTSP. Empiece con la edición Free, para hasta 16 cámaras, y pase a Basic o Professional cuando necesite más.</p>
     <div class="cta">
       <a class="btn btn-primary" href="https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Descargar para Windows</a>
       <a class="btn btn-ghost" href="#planes">Ver planes</a>
       <small>Versión 2.5.0 · Windows 10 y 11, 64 bits · Español, English, Português</small>
     </div>
     <div class="trust">
-      <span>Sin licencia por cámara</span><span>Cualquier cámara ONVIF o RTSP</span><span>Actualización desde la app</span><span>Una PC o distribuido</span>
+      <span>Free hasta 16 cámaras</span><span>Cualquier cámara ONVIF o RTSP</span><span>Workstations y usuarios sin límite</span><span>Actualización desde la app</span>
     </div>
-    <img class="shot" src="../assets/workstation-es.png" width="1280" height="800" alt="Workstation de NexaVMS con un mosaico en vivo de cámaras IP">
+    <img class="shot" src="../assets/workstation-es.png" width="1280" height="800" alt="Workstation de Nexa VMS con un mosaico en vivo de cámaras IP">
   </div>
 </div>
 
 <section id="funciones">
   <div class="wrap">
-    <h2>Lo esencial de un VMS, sin costo</h2>
-    <p class="sub">El mismo software sirve desde una sola computadora hasta varios servidores.</p>
+    <h2>Lo esencial de un VMS</h2>
+    <p class="sub">Video en vivo, grabación, reproducción y exportación están en todas las ediciones. El mismo software sirve desde una sola computadora hasta varios servidores.</p>
     <div class="grid">
       <div class="card"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 10l4.55-2.28A1 1 0 0 1 21 8.62v6.76a1 1 0 0 1-1.45.9L15 14"/><rect x="3" y="6" width="12" height="12" rx="2"/></svg></div><h3>Funciona con sus cámaras</h3><p>Encuentra las cámaras ONVIF en la red y detecta la ruta del video RTSP. Solo ingresa el usuario y la contraseña de la cámara.</p></div>
       <div class="card"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.5"/></svg></div><h3>Grabación continua</h3><p>Graba en disco en MP4 segmentado, sin recodificar, con catálogo de grabaciones y retención por días.</p></div>
@@ -97,7 +99,7 @@
       <div class="card"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Reproducción</h3><p>Hasta 16 cámaras con un mismo reloj, reproducción hacia atrás, búsqueda por movimiento y exportación firmada.</p></div>
       <div class="card"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3M7 8l5-5 5 5"/><path d="M5 15v4a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4"/></svg></div><h3>Exportación</h3><p>Exporte imágenes y videos con una marca de agua con su logotipo, la fecha y la hora.</p></div>
       <div class="card"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"/></svg></div><h3>Usuarios y perfiles</h3><p>Perfiles de administrador, supervisor y operador, aplicados por el servidor.</p></div>
-      <div class="card"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></div><h3>Instalación distribuida</h3><p>Ejecute todo en una PC o use un servidor central con varios servidores de grabación y estaciones de operación.</p></div>
+      <div class="card"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><path d="M7 7.5h.01M7 16.5h.01"/></svg></div><h3>Instalación distribuida</h3><p>Ejecute todo en una PC o use un servidor central con estaciones de operación. Varios servidores de grabación y de IA forman parte de Professional.</p></div>
       <div class="card"><div class="ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.5-4.5L3 9"/><path d="M3 4v5h5"/><path d="M4 13a8 8 0 0 0 14.5 4.5L21 15"/><path d="M21 20v-5h-5"/></svg></div><h3>Actualización desde la app</h3><p>Solo se descargan los archivos modificados, normalmente alrededor de 1 MB. Las versiones están firmadas y una actualización fallida se revierte automáticamente.</p></div>
     </div>
   </div>
@@ -105,50 +107,66 @@
 
 <section id="planes">
   <div class="wrap">
-    <h2>Núcleo gratuito, módulos pagos</h2>
-    <p class="sub">El VMS no tiene licencia por cámara. Solo paga por los módulos avanzados que use.</p>
+    <h2>Ediciones</h2>
+    <p class="sub">Free hasta 16 cámaras. Basic hasta 32. Professional por cámara, hasta 500 por servidor. Enterprise, próximamente. Workstations y usuarios sin límite en todas las ediciones.</p>
     <div class="plans">
       <div class="plan free">
-        <h3>NexaVMS Gratuito</h3>
+        <h3>Free</h3>
         <div class="price">US$ 0 <small>sin plazo</small></div>
         <ul>
+          <li>Hasta 16 cámaras en un sitio Windows</li>
           <li>Video en vivo, grabación, reproducción y exportación</li>
-          <li>Cualquier cámara ONVIF o RTSP, sin licencia por cámara</li>
-          <li>Usuarios y perfiles</li>
-          <li>Una PC o servidores distribuidos</li>
-          <li>Actualización desde la app</li>
-          <li>Español, inglés y portugués</li>
+          <li>Grabación de hasta 3 días</li>
+          <li>IA con cuota de horas</li>
+          <li>Workstations y usuarios sin límite</li>
+          <li>Actualizaciones mientras la cuenta esté activa</li>
         </ul>
         <a class="btn btn-primary" href="https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest">Descargar</a>
       </div>
       <div class="plan">
-        <h3>Módulos avanzados</h3>
-        <div class="price"><small>Planes accesibles</small></div>
+        <h3>Basic</h3>
+        <div class="price"><small>Licencia por cámara</small></div>
         <ul>
-          <li>Analíticas de video con IA: conteo de personas, reconocimiento facial, placas, búsqueda inteligente y protección perimetral <span class="tag">Gratuito en la fase de pruebas</span></li>
-          <li class="soon">Otras analíticas: merodeo, filas, fuego y humo, EPP <span class="tag">En desarrollo</span></li>
-          <li class="soon">Prime Cloud: acceso remoto y móvil sin abrir puertos <span class="tag">Próximamente</span></li>
-          <li class="soon">Alta disponibilidad: servidor central redundante <span class="tag">Próximamente</span></li>
+          <li>Hasta 32 cámaras en un sitio Windows</li>
+          <li>Grabación limitada solo por el disco</li>
+          <li>IA opcional, contratada por canal</li>
+          <li>Workstations y usuarios sin límite</li>
+          <li>Perpetua con 1 año de mantenimiento, o suscripción</li>
         </ul>
-        <a class="btn btn-ghost" href="https://primebr.com.br/">Pedir cotización</a>
+        <a class="btn btn-ghost" href="https://nexavms.io/precos">Ver precios</a>
+      </div>
+      <div class="plan">
+        <h3>Professional</h3>
+        <div class="price"><small>Licencia por cámara</small></div>
+        <ul>
+          <li>Hasta 500 cámaras por servidor</li>
+          <li>Varios Storages y Servidores de IA</li>
+          <li>Servidor de respaldo (N+1)</li>
+          <li>IA por canal (cámara y módulo) o IA de sitio</li>
+          <li>Workstations y usuarios sin límite</li>
+          <li>Perpetua con 1 año de mantenimiento, o suscripción</li>
+        </ul>
+        <a class="btn btn-ghost" href="https://nexavms.io/precos">Ver precios</a>
       </div>
     </div>
+    <p class="sub" style="margin:24px 0 0">La instalación se activa con una cuenta Nexa VMS creada en nexavms.io, y la primera activación incluye 30 días de prueba del Professional. Enterprise, con alta disponibilidad, llegará próximamente. Precios en dólares en <a href="https://nexavms.io/precos">nexavms.io/precos</a>.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>Cómo se compara NexaVMS</h2>
-    <p class="sub">Una opción moderna a los VMS que cobran por cámara.</p>
+    <h2>Cómo se compara Nexa VMS</h2>
+    <p class="sub">Qué cambia frente a un VMS habitual.</p>
     <div class="table-wrap">
       <table>
         <thead><tr><th></th><th>NexaVMS</th><th>VMS habitual</th></tr></thead>
         <tbody>
-          <tr><td>Licencia del núcleo</td><td class="us">Gratuita, sin costo por cámara</td><td>Pago por cámara o canal</td></tr>
+          <tr><td>Para empezar</td><td class="us">Free hasta 16 cámaras, sin costo y sin plazo</td><td>A menudo solo una prueba con plazo</td></tr>
+          <tr><td>Workstations y usuarios</td><td class="us">Sin límite en todas las ediciones</td><td>A menudo con licencia por estación o usuario</td></tr>
           <tr><td>Cámaras</td><td class="us">Cualquier cámara ONVIF o RTSP</td><td>A menudo atado a una marca</td></tr>
           <tr><td>Implementación</td><td class="us">Un instalador, de una PC a distribuido</td><td>Productos o ediciones separados</td></tr>
           <tr><td>Actualizaciones</td><td class="us">Desde la app, con reversión automática</td><td>Descargar y reinstalar</td></tr>
-          <tr><td>Funciones avanzadas</td><td class="us">Módulos con planes accesibles</td><td>Incluidas en ediciones más caras</td></tr>
+          <tr><td>Analíticas de IA</td><td class="us">En el mismo software, por canal o por sitio</td><td>A menudo un producto aparte</td></tr>
         </tbody>
       </table>
     </div>
@@ -170,10 +188,12 @@
 <section id="faq">
   <div class="wrap">
     <h2>Preguntas frecuentes</h2>
-    <details><summary>¿NexaVMS es gratuito?</summary><p>Sí. Video en vivo, grabación, reproducción, exportación, usuarios, instalación distribuida y actualizaciones son gratuitos, sin licencia por cámara. Las analíticas con IA también son gratuitas en la fase de pruebas actual. Prime Cloud y la alta disponibilidad serán módulos pagos.</p></details>
-    <details><summary>¿Qué cámaras son compatibles?</summary><p>Cualquier cámara IP con ONVIF o RTSP. NexaVMS encuentra las cámaras ONVIF en la red y detecta la ruta del video.</p></details>
-    <details><summary>¿Reemplaza a un NVR?</summary><p>NexaVMS graba las cámaras IP directamente en una PC o servidor Windows, con retención por días. También puede grabar desde grabadores existentes que ofrecen RTSP.</p></details>
-    <details><summary>¿Cuántas cámaras puedo agregar?</summary><p>La versión gratuita no tiene límite por cámara. El límite práctico depende del hardware y de la red. En sitios más grandes, use la instalación distribuida con varios servidores de grabación.</p></details>
+    <details><summary>¿Nexa VMS es gratuito?</summary><p>La edición Free es gratuita y sin plazo, para hasta 16 cámaras en un sitio Windows, con grabación de hasta 3 días y una cuota de horas de IA. Basic y Professional se venden por cámara, como licencia perpetua con 1 año de mantenimiento o como suscripción. Los precios, en dólares, están en <a href="https://nexavms.io/precos">nexavms.io/precos</a>.</p></details>
+    <details><summary>¿Necesito activar la instalación?</summary><p>Sí. La instalación se activa desde la Consola del System Manager con una cuenta Nexa VMS creada en <a href="https://nexavms.io/">nexavms.io</a>. Sin activación, el sistema no graba ni muestra video. La primera activación incluye 30 días de prueba del Professional; después, la instalación vuelve a Free si no se compra una licencia.</p></details>
+    <details><summary>¿Qué cámaras son compatibles?</summary><p>Cualquier cámara IP con ONVIF o RTSP. Nexa VMS encuentra las cámaras ONVIF en la red y detecta la ruta del video.</p></details>
+    <details><summary>¿Reemplaza a un NVR?</summary><p>Nexa VMS graba las cámaras IP directamente en una PC o servidor Windows, con retención por días. También puede grabar desde grabadores existentes que ofrecen RTSP.</p></details>
+    <details><summary>¿Cuántas cámaras puedo agregar?</summary><p>Hasta 16 en Free y hasta 32 en Basic. En Professional, la licencia es por cámara, hasta 500 por servidor, con varios Storages y Servidores de IA y servidor de respaldo (N+1). La edición Enterprise, con alta disponibilidad, llegará próximamente.</p></details>
+    <details><summary>¿Cómo se contrata la IA?</summary><p>Las analíticas de video (conteo de personas, reconocimiento facial, placas, búsqueda inteligente y protección perimetral) se contratan por canal, es decir, por cámara y módulo, o como IA de sitio. Free incluye una cuota de horas de IA. En Free, el reconocimiento facial está disponible solo en el modo demostración y durante la prueba.</p></details>
     <details><summary>¿Qué idiomas hay disponibles?</summary><p>Español, inglés y portugués (Brasil), en las aplicaciones, el instalador y las notas de versión.</p></details>
     <details><summary>¿Cómo abro una exportación protegida (.pvx)?</summary><p>La exportación protegida va cifrada con contraseña y solo se abre en Nexa Player, gratuito, para Windows. <a href="https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest/download/NexaPlayer-win-x64.zip">Descargue Nexa Player</a>, extraiga el zip, abra PrimePlayer.exe, elija el archivo .pvx y escriba la contraseña. Nexa Player muestra si cada video está íntegro y firmado.</p></details>
   </div>
@@ -181,10 +201,10 @@
 
 <section class="final">
   <div class="wrap">
-    <h2>Empiece gratis</h2>
-    <p class="sub" style="margin-left:auto;margin-right:auto">Descargue el instalador, elija una PC o una instalación distribuida y agregue sus cámaras.</p>
+    <h2>Empiece con la edición Free</h2>
+    <p class="sub" style="margin-left:auto;margin-right:auto">Descargue el instalador, actívelo con una cuenta Nexa VMS y agregue sus cámaras. La primera activación incluye 30 días de prueba del Professional.</p>
     <div class="cta">
-      <a class="btn btn-primary" href="https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Descargar NexaVMS</a>
+      <a class="btn btn-primary" href="https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Descargar Nexa VMS</a>
       <a class="btn btn-ghost" href="https://github.com/Daniel1ux/Prime-VMS-Public/blob/main/README.es.md">Guía de instalación</a>
     </div>
   </div>
