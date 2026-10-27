@@ -162,7 +162,8 @@ administrador:
 
 | Versão | Data | Instalador | Atualização pelo app |
 |---|---|---|---|
-| [2.7.17](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.7.17) (recomendada) | 26/10/2026 | `PrimeVMS-Setup-2.7.17.exe`, 637 MB | Sim |
+| [2.7.18](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.7.18) (recomendada) | 26/10/2026 | `PrimeVMS-Setup-2.7.18.exe`, 637 MB | Sim |
+| [2.7.17](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.7.17) | 26/10/2026 | `PrimeVMS-Setup-2.7.17.exe`, 637 MB | Sim |
 | [2.7.16](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.7.16) | 26/10/2026 | `PrimeVMS-Setup-2.7.16.exe`, 637 MB | Sim |
 | [2.7.15](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.7.15) | 26/10/2026 | `PrimeVMS-Setup-2.7.15.exe`, 637 MB | Sim |
 | [2.7.14](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.7.14) | 26/10/2026 | `PrimeVMS-Setup-2.7.14.exe`, 637 MB | Sim |
@@ -192,16 +193,16 @@ administrador:
 | [1.8.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.8.0) | 20/10/2026 | `PrimeVMS-Setup-1.8.0.exe`, 543 MB | Sim |
 | [1.7.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.7.0) | 20/10/2026 | `PrimeVMS-Setup-1.7.0.exe`, 542 MB | Sim |
 | [1.5.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.5.0) | 19/10/2026 | `PrimeVMS-Setup-1.5.0.exe`, 498 MB | Sim |
-| [1.4.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.4.0) | 18/10/2026 | `PrimeVMS-Setup-1.4.0.exe`, 497 MB | Não (instale a 2.7.17) |
-| [1.3.1](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.3.1) | 18/10/2026 | `PrimeVMS-Setup-1.3.1.exe`, 494 MB | Não (instale a 2.7.17) |
-| [1.3.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.3.0) | 18/10/2026 | `PrimeVMS-Setup-1.3.0.exe`, 494 MB | Não (instale a 2.7.17) |
-| [1.2.1](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.2.1) | 18/10/2026 | `PrimeVMS-Setup-1.2.1.exe`, 493 MB | Não (instale a 2.7.17) |
-| [1.2.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.2.0) | 18/10/2026 | `PrimeVMS-Setup-1.2.0.exe`, 493 MB | Não (instale a 2.7.17) |
-| [1.1.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.1.0) | 18/10/2026 | `PrimeVMS-Setup-1.1.0.exe`, 493 MB | Não (instale a 2.7.17) |
-| [1.0.6](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.6) | 18/10/2026 | `PrimeVMS-Setup-1.0.6.exe`, 315 MB | Não (instale a 2.7.17) |
-| [1.0.5](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.5) | 18/10/2026 | `PrimeVMS-Setup-1.0.5.exe`, 315 MB | Não (instale a 2.7.17) |
-| [1.0.4](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.4) | 18/10/2026 | `PrimeVMS-Setup-1.0.4.exe`, 314 MB | Não (instale a 2.7.17) |
-| [1.0.3](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.3) | 17/10/2026 | `PrimeVMS-Setup-1.0.3.exe`, 314 MB | Não (instale a 2.7.17) |
+| [1.4.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.4.0) | 18/10/2026 | `PrimeVMS-Setup-1.4.0.exe`, 497 MB | Não (instale a 2.7.18) |
+| [1.3.1](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.3.1) | 18/10/2026 | `PrimeVMS-Setup-1.3.1.exe`, 494 MB | Não (instale a 2.7.18) |
+| [1.3.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.3.0) | 18/10/2026 | `PrimeVMS-Setup-1.3.0.exe`, 494 MB | Não (instale a 2.7.18) |
+| [1.2.1](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.2.1) | 18/10/2026 | `PrimeVMS-Setup-1.2.1.exe`, 493 MB | Não (instale a 2.7.18) |
+| [1.2.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.2.0) | 18/10/2026 | `PrimeVMS-Setup-1.2.0.exe`, 493 MB | Não (instale a 2.7.18) |
+| [1.1.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.1.0) | 18/10/2026 | `PrimeVMS-Setup-1.1.0.exe`, 493 MB | Não (instale a 2.7.18) |
+| [1.0.6](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.6) | 18/10/2026 | `PrimeVMS-Setup-1.0.6.exe`, 315 MB | Não (instale a 2.7.18) |
+| [1.0.5](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.5) | 18/10/2026 | `PrimeVMS-Setup-1.0.5.exe`, 315 MB | Não (instale a 2.7.18) |
+| [1.0.4](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.4) | 18/10/2026 | `PrimeVMS-Setup-1.0.4.exe`, 314 MB | Não (instale a 2.7.18) |
+| [1.0.3](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.3) | 17/10/2026 | `PrimeVMS-Setup-1.0.3.exe`, 314 MB | Não (instale a 2.7.18) |
 | [1.0.2](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.2) | 06/06/2026 | `PrimeVMS-Setup-1.0.2.exe`, 424 MB | Não |
 | [1.0.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v1.0.0) | 01/06/2026 | `PrimeVMS-Setup-1.0.0.exe`, 265 MB | Não |
 
@@ -216,11 +217,12 @@ nem mostra vídeo. A primeira ativação traz 30 dias de avaliação do Professi
 ### Conferir o download
 
 ```powershell
-Get-FileHash .\PrimeVMS-Setup-2.7.17.exe -Algorithm SHA256
+Get-FileHash .\PrimeVMS-Setup-2.7.18.exe -Algorithm SHA256
 ```
 
 | Arquivo | SHA-256 |
 |---|---|
+| `PrimeVMS-Setup-2.7.18.exe` | `747646A19ACC3A3BAE6BB7D15E341274D4A1D7D29D81AE14421FFBAFF6F127A2` |
 | `PrimeVMS-Setup-2.7.17.exe` | `A0D26E80CD4C592A0DA16260CB61C4F249C655382C3300080D78947FF0EA9237` |
 | `PrimeVMS-Setup-2.7.16.exe` | `FA5EE73C47F2981838B8C5080517A32886A6585AD679C771CFF85036103E07E4` |
 | `PrimeVMS-Setup-2.7.15.exe` | `9682AC8C48FF8D8F209AD57BB607DA8F66AFC072B519EACF49AAB8882F7CFE45` |
