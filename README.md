@@ -2,11 +2,11 @@ English · [Português](README.pt-BR.md) · [Español](README.es.md)
 
 # NexaVMS
 
-Free video management software (VMS) for IP cameras and CCTV on Windows. Watch live, record
+Video management software (VMS) for IP cameras and CCTV on Windows. Watch live, record
 around the clock, play back and export video from any ONVIF or RTSP camera.
 
-The core product is free, with no per-camera license. Advanced modules are available
-on affordable plans.
+Nexa VMS is licensed per camera in the Basic and Professional editions. Prices are available
+on request. See [Access and licenses](#access-and-licenses).
 
 [Download](https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest) ·
 [Website](https://daniel1ux.github.io/Prime-VMS-Public/) ·
@@ -31,7 +31,7 @@ and Spanish.
 
 ## Features
 
-Included in the free version:
+Included in every edition:
 
 - Automatic discovery of ONVIF cameras and of the RTSP stream path. Only the camera
   user name and password are needed. Built-in path patterns for Hikvision, Annke,
@@ -49,17 +49,30 @@ Included in the free version:
 - Single-computer or distributed deployment with several recording servers.
 - Updates from inside the app.
 
-## Paid modules
+## Modules
 
 | Module | Availability |
 |---|---|
-| AI video analytics: people counting, face recognition, license plate recognition for Mercosur plates, smart search and perimeter protection, each with a test mode using real sample videos (AI Engine) | Available, free during the testing phase |
-| Additional analytics: loitering, queue detection, fire and smoke, PPE, abandoned objects | In development |
-| Prime Cloud: remote and mobile access without opening ports | Coming soon |
-| High availability: redundant central server | Coming soon |
+| AI video analytics (AI Engine): facial recognition, license plate reading (Brazil and other countries), people counting, smart search, perimeter protection, PPE, abandoned objects, fire and smoke, crowd and loitering | Available, licensed per channel or site-wide |
+| Nexa Cloud: remote and mobile access without opening ports | Available |
+| High availability: redundant central server (Enterprise) | Coming soon |
+| Nexa Federation: groups, networks and cities, from thousands to more than 100,000 cameras, many sites and control rooms in one operation, high-availability cluster, vertical and horizontal scaling | By project, contact support@nexavms.io |
 
-Plans are designed for small and mid-size projects.
-[Contact Prime Building Technology](https://primebr.com.br/) for a quote.
+## Access and licenses
+
+Nexa VMS is offered in the Basic and Professional editions, licensed per camera. Prices are
+on request. The editions are described at [nexavms.io/precos](https://nexavms.io/precos).
+
+To evaluate Nexa VMS:
+
+1. Create an account at [nexavms.io/conta](https://nexavms.io/conta).
+2. Install Nexa VMS and activate the installation in the System Manager Console with that
+   account.
+3. The Nexa VMS team reviews new accounts and releases a trial of the Professional edition.
+   The trial lasts 24 hours by default, and the team can extend it.
+
+Without activation, Nexa VMS does not record or show video. For access, licenses and prices,
+contact [support@nexavms.io](mailto:support@nexavms.io).
 
 ## Requirements
 
@@ -86,6 +99,8 @@ Plans are designed for small and mid-size projects.
      server, Storage on one or more recording servers and Workstation on the operator
      computers.
 4. Open Workstation or the System Manager Console.
+5. In the System Manager Console, activate the installation with your Nexa VMS account.
+   See [Access and licenses](#access-and-licenses).
 
 Sign in with user `admin` and password `admin`, then change the password.
 
@@ -105,7 +120,7 @@ sure the network allows these ports between the servers and the Workstations.
 ## Nexa Player
 
 Protected exports (`.pvx`) are encrypted with a password and include an integrity check, so they
-do not open in regular video players. To watch them, use Nexa Player, free, for Windows. It opens
+do not open in regular video players. To watch them, use Nexa Player for Windows. It opens
 `.pvx` packages, exported folders and MP4 files, and shows whether each video is intact and signed.
 
 - [Download Nexa Player (zip, no installation)](https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest/download/NexaPlayer-win-x64.zip)
@@ -212,9 +227,9 @@ Earlier versions are kept for reference. If you run version 1.4.0 or earlier, in
 the latest version with the installer once. Your data is kept, and later versions
 update from inside the app.
 
-Starting with 2.5.0, the installation must be activated with a Nexa VMS account, created at
-[nexavms.io](https://nexavms.io), from the System Manager Console. Without activation, NexaVMS does
-not record or show video. The first activation includes a 30-day Professional trial.
+Starting with 2.5.0, the installation must be activated with a Nexa VMS account from the System
+Manager Console. Without activation, NexaVMS does not record or show video. See
+[Access and licenses](#access-and-licenses).
 
 ### Verify the download
 
@@ -274,10 +289,14 @@ Get-FileHash .\PrimeVMS-Setup-2.11.0.exe -Algorithm SHA256
 
 ## FAQ
 
-**Is NexaVMS free?**
-Yes. Live view, recording, playback, export, users, distributed deployment and updates
-are free, with no per-camera license. AI analytics are also free during the current
-testing phase. Prime Cloud and high availability will be paid modules.
+**How do I get access to Nexa VMS?**
+Create an account at [nexavms.io/conta](https://nexavms.io/conta), install Nexa VMS and
+activate it in the System Manager Console. The Nexa VMS team reviews new accounts and releases
+a trial of the Professional edition, 24 hours by default, which the team can extend.
+
+**How much does it cost?**
+Basic and Professional are licensed per camera. Prices are on request: contact
+[support@nexavms.io](mailto:support@nexavms.io).
 
 **Which cameras are supported?**
 Any IP camera with ONVIF or RTSP. NexaVMS finds ONVIF cameras on the network and
@@ -288,8 +307,9 @@ NexaVMS records IP cameras directly on a Windows PC or server, with retention by
 It can also record from existing recorders that provide RTSP streams.
 
 **How many cameras can I add?**
-The free version has no per-camera limit. The practical limit depends on hardware and
-network. For larger sites, use a distributed deployment with several recording servers.
+It depends on the edition, the hardware and the network. The limits of each edition are at
+[nexavms.io/precos](https://nexavms.io/precos). For larger sites, use a distributed deployment
+with several recording servers.
 
 **Which languages are available?**
 English, Portuguese (Brazil) and Spanish, in the apps, the installer and the release
@@ -304,14 +324,14 @@ deleted.
 
 ## License and support
 
-Copyright © 2026 Prime Building Technology. All rights reserved.
+Copyright © 2026 Prime Systems and Controls LLC. Nexa VMS is a trade name of Prime Systems and
+Controls LLC.
 
-The VMS core (System Manager, Storage and Workstation) is free to use for video
-management at the licensee's site. Cloud and high-availability modules require a
-commercial license; AI modules are free during the testing phase. The operator is responsible for complying with applicable law,
-including data protection laws, when capturing, recording and processing images.
+Using Nexa VMS requires an active license or a trial released by the Nexa VMS team. The
+operator is responsible for complying with applicable law, including data protection laws,
+when capturing, recording and processing images.
 
 NexaVMS includes third-party components under their own licenses, including
 [FFmpeg](https://ffmpeg.org/) and [go2rtc](https://github.com/AlexxIT/go2rtc).
 
-Support: [primebr.com.br](https://primebr.com.br/)
+Support: [support@nexavms.io](mailto:support@nexavms.io) · [nexavms.io](https://nexavms.io)
