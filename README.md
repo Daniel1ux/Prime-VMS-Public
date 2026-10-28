@@ -56,6 +56,7 @@ Included in every edition:
 | AI video analytics (AI Engine): facial recognition, license plate reading (Brazil and other countries), people counting, smart search, perimeter protection, PPE, abandoned objects, fire and smoke, crowd and loitering | Available, licensed per channel or site-wide |
 | Nexa Cloud: remote and mobile access without opening ports | Available |
 | High availability: redundant central server (Enterprise) | Coming soon |
+| Nexa Federation: groups, networks and cities, from thousands to more than 100,000 cameras, many sites and control rooms in one operation, high-availability cluster, vertical and horizontal scaling | By project, contact support@nexavms.io |
 
 ## Access and licenses
 

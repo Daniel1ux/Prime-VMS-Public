@@ -58,6 +58,7 @@ Incluidas en todas las ediciones:
 | Analíticas de video con IA (AI Engine): reconocimiento facial, lectura de placas (Brasil y otros países), conteo de personas, búsqueda inteligente, perímetro, EPP, objetos abandonados, fuego y humo, aglomeración y merodeo | Disponible, se contrata por canal o para el sitio |
 | Nexa Cloud: acceso remoto y móvil sin abrir puertos | Disponible |
 | Alta disponibilidad: servidor central redundante (Enterprise) | Próximamente |
+| Nexa Federation: grupos, redes y ciudades, de miles a más de 100 mil cámaras, varios sitios y centrales en una sola operación, clúster con alta disponibilidad, escalado vertical y horizontal | Por proyecto, contacte a support@nexavms.io |
 
 ## Acceso y licencias
 
