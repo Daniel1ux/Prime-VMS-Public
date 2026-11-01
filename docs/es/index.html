@@ -52,6 +52,7 @@
     { "@type": "Question", "name": "¿Reemplaza a un NVR?", "acceptedAnswer": { "@type": "Answer", "text": "Nexa VMS graba las cámaras IP directamente en una PC o servidor Windows, con retención por días. También puede grabar desde grabadores existentes que ofrecen RTSP." } },
     { "@type": "Question", "name": "¿Cuántas cámaras puedo agregar?", "acceptedAnswer": { "@type": "Answer", "text": "Hasta 16 en Free y hasta 32 en Basic. En Professional, la licencia es por cámara, hasta 500 por servidor, con varios Storages y Servidores de IA y servidor de respaldo (N+1). La edición Enterprise, con alta disponibilidad, llegará próximamente." } },
     { "@type": "Question", "name": "¿Cómo se contrata la IA?", "acceptedAnswer": { "@type": "Answer", "text": "Las analíticas de video (conteo de personas, reconocimiento facial, placas, búsqueda inteligente y protección perimetral) se contratan por canal, es decir, por cámara y módulo, o como IA de sitio. Free incluye una cuota de horas de IA. En Free, el reconocimiento facial está disponible solo en el modo demostración y durante la prueba." } },
+    { "@type": "Question", "name": "¿Puedo instalar solo el servidor de IA?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. En el instalador, elija Solo el servidor de IA. Instala únicamente el servidor de IA en esa computadora, con nombre, dirección y contraseña propios, y puede conectarlo a un System Manager existente en ese momento o después. Puede haber varios servidores de IA." } },
     { "@type": "Question", "name": "¿Qué idiomas hay disponibles?", "acceptedAnswer": { "@type": "Answer", "text": "Español, inglés y portugués (Brasil), en las aplicaciones, el instalador y las notas de versión." } }
   ]
 }
@@ -79,7 +80,7 @@
     <div class="cta">
       <a class="btn btn-primary" href="https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Descargar para Windows</a>
       <a class="btn btn-ghost" href="#planes">Ver planes</a>
-      <small>Versión 2.11.0 · Windows 10 y 11, 64 bits · Español, English, Português</small>
+      <small>Versión 2.20.0 · Windows 10 y 11, 64 bits · Español, English, Português</small>
     </div>
     <div class="trust">
       <span>Free hasta 16 cámaras</span><span>Cualquier cámara ONVIF o RTSP</span><span>Workstations y usuarios sin límite</span><span>Actualización desde la app</span>
@@ -176,11 +177,12 @@
 <section>
   <div class="wrap">
     <h2>Cómo funciona</h2>
-    <p class="sub">Un instalador con tres componentes. Instálelos en una PC o distribúyalos en su red.</p>
+    <p class="sub">Un instalador con cuatro componentes. Instálelos en una PC o distribúyalos en su red.</p>
     <div class="flow">
       <div class="card"><h3>Storage</h3><p>El servidor de grabación. Recibe el video RTSP de cada cámara, graba en disco, aplica la retención y entrega el video en vivo y grabado.</p></div>
       <div class="card"><h3>System Manager</h3><p>El servidor central. Guarda cámaras, usuarios y permisos, y define qué servidor graba cada cámara.</p></div>
       <div class="card"><h3>Workstation</h3><p>La aplicación del operador. Mosaicos en vivo, línea de tiempo de reproducción, varios monitores y exportación.</p></div>
+      <div class="card"><h3>Servidor de IA</h3><p>Analiza el video de las cámaras para los módulos de IA y envía los eventos al System Manager. Instálelo junto con el resto o en una computadora propia: el instalador tiene la opción Solo el servidor de IA.</p></div>
     </div>
   </div>
 </section>
@@ -194,6 +196,7 @@
     <details><summary>¿Reemplaza a un NVR?</summary><p>Nexa VMS graba las cámaras IP directamente en una PC o servidor Windows, con retención por días. También puede grabar desde grabadores existentes que ofrecen RTSP.</p></details>
     <details><summary>¿Cuántas cámaras puedo agregar?</summary><p>Hasta 16 en Free y hasta 32 en Basic. En Professional, la licencia es por cámara, hasta 500 por servidor, con varios Storages y Servidores de IA y servidor de respaldo (N+1). La edición Enterprise, con alta disponibilidad, llegará próximamente.</p></details>
     <details><summary>¿Cómo se contrata la IA?</summary><p>Las analíticas de video (conteo de personas, reconocimiento facial, placas, búsqueda inteligente y protección perimetral) se contratan por canal, es decir, por cámara y módulo, o como IA de sitio. Free incluye una cuota de horas de IA. En Free, el reconocimiento facial está disponible solo en el modo demostración y durante la prueba.</p></details>
+    <details><summary>¿Puedo instalar solo el servidor de IA?</summary><p>Sí. En el instalador, elija Solo el servidor de IA. Instala únicamente el servidor de IA en esa computadora, con nombre, dirección y contraseña propios, y puede conectarlo a un System Manager existente en ese momento o después. Puede haber varios servidores de IA.</p></details>
     <details><summary>¿Qué idiomas hay disponibles?</summary><p>Español, inglés y portugués (Brasil), en las aplicaciones, el instalador y las notas de versión.</p></details>
     <details><summary>¿Cómo abro una exportación protegida (.pvx)?</summary><p>La exportación protegida va cifrada con contraseña y solo se abre en Nexa Player, gratuito, para Windows. <a href="https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest/download/NexaPlayer-win-x64.zip">Descargue Nexa Player</a>, extraiga el zip, abra PrimePlayer.exe, elija el archivo .pvx y escriba la contraseña. Nexa Player muestra si cada video está íntegro y firmado.</p></details>
   </div>

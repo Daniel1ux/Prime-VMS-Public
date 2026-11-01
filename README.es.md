@@ -17,7 +17,7 @@ están disponibles en planes accesibles.
 
 ## Descripción general
 
-NexaVMS tiene tres componentes, que pueden estar en una sola computadora o
+NexaVMS tiene cuatro componentes, que pueden estar en una sola computadora o
 distribuidos en la red:
 
 | Componente | Función |
@@ -25,8 +25,9 @@ distribuidos en la red:
 | System Manager | Servidor central. Administra cámaras, usuarios, permisos y datos del sitio. Se ejecuta como servicio de Windows. |
 | Storage | Servidor de grabación. Graba las cámaras en disco, aplica la retención y entrega video en vivo y grabado. Se ejecuta como servicio de Windows. |
 | Workstation | Aplicación del operador. Mosaicos en vivo, reproducción con línea de tiempo y exportación. |
+| Servidor de IA | Analiza el video de las cámaras para los módulos de IA y envía los eventos al System Manager. Va en la misma computadora o en computadoras propias, una o varias. Se ejecuta como servicio de Windows. |
 
-Los tres vienen en un solo instalador. Las aplicaciones están disponibles en español,
+Todos vienen en un solo instalador. Las aplicaciones están disponibles en español,
 inglés y portugués.
 
 ## Funciones
@@ -72,6 +73,8 @@ Los planes están pensados para proyectos pequeños y medianos.
   grabaciones se guardan fuera de la carpeta del programa.
 - Para la Workstation, se recomienda una tarjeta de video con decodificación por
   hardware en mosaicos grandes.
+- Para el servidor de IA, al menos 8 GB de memoria y 10 GB libres. Una tarjeta de video
+  compatible atiende muchas más cámaras; sin ella, el análisis corre en el procesador.
 
 ## Instalación
 
@@ -80,17 +83,27 @@ Los planes están pensados para proyectos pequeños y medianos.
 2. Ejecute el instalador, elija el idioma y acepte el aviso de administrador.
    El instalador todavía no tiene firma de código. Si aparece Windows SmartScreen,
    haga clic en **Más información** y luego en **Ejecutar de todas formas**.
-3. Elija el modelo de implementación:
-   - **Una sola computadora.** Instala System Manager, Storage y Workstation ya
+3. Elija cómo va a participar esta computadora:
+   - **Todo en este equipo.** Instala System Manager, Storage y Workstation ya
      conectados entre sí. Adecuado para hasta unas 16 cámaras, sin redundancia de
-     grabación.
-   - **Distribuida.** Marque las funciones de esta computadora: System Manager en un
-     servidor dedicado, Storage en uno o más servidores de grabación y Workstation en
-     las computadoras de operación.
-4. Abra la Workstation o la Consola del System Manager.
+     grabación. El servidor de IA se puede incluir en la misma instalación.
+   - **Solo el servidor de IA.** Para una computadora que solo analiza video para un
+     Nexa VMS que ya existe. No instala System Manager, Storage ni Workstation. El
+     instalador revisa el hardware, pide el nombre del servidor, la dirección que usará el
+     System Manager y la contraseña, y puede conectarlo al System Manager en ese momento
+     o dejarlo para después.
+   - **Elegir las partes.** Marque las funciones de esta computadora: System Manager en
+     un servidor dedicado, Storage en uno o más servidores de grabación, Workstation en
+     las computadoras de operación y servidor de IA.
+4. Abra la Workstation o la Consola del System Manager. En el servidor de IA, la
+   aplicación Servidor de IA NexaVMS se abre al final.
 
 Inicie sesión con el usuario `admin` y la contraseña `admin` y luego cambie la
-contraseña.
+contraseña. En el servidor de IA, el usuario es `admin` y la contraseña es la elegida en
+el instalador.
+
+Los modelos de IA (unos 600 MB) se descargan en segundo plano después de la instalación.
+El avance aparece en la aplicación del servidor de IA, en Modelos.
 
 El idioma elegido en el instalador pasa a ser el predeterminado de las aplicaciones.
 Cada usuario puede cambiarlo con el selector de idioma en la pantalla de inicio de
@@ -102,6 +115,7 @@ sesión o en la barra lateral.
 |---|---|
 | 58100 | System Manager |
 | 58200 | Storage |
+| 58300 | Servidor de IA |
 
 El instalador agrega estas reglas al Firewall de Windows. En una instalación
 distribuida, asegúrese de que la red permita estos puertos entre los servidores y las

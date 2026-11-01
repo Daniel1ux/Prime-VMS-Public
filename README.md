@@ -17,7 +17,7 @@ on affordable plans.
 
 ## Overview
 
-NexaVMS is made of three components that you can install on one computer or spread
+NexaVMS is made of four components that you can install on one computer or spread
 across your network:
 
 | Component | Role |
@@ -25,8 +25,9 @@ across your network:
 | System Manager | Central server. Manages cameras, users, permissions and site settings. Runs as a Windows service. |
 | Storage | Recording server. Records cameras to disk, applies retention and serves live and recorded video. Runs as a Windows service. |
 | Workstation | Operator application. Live layouts, playback with timeline and export. |
+| AI server | Analyzes camera video for the AI modules and sends events to the System Manager. Runs on the same computer or on dedicated computers, one or several. Runs as a Windows service. |
 
-All three come in a single installer. The apps are available in English, Portuguese
+All of them come in a single installer. The apps are available in English, Portuguese
 and Spanish.
 
 ## Features
@@ -70,6 +71,8 @@ Plans are designed for small and mid-size projects.
   the program folder.
 - For Workstation, a graphics card with hardware video decoding is recommended for
   large layouts.
+- For the AI server, at least 8 GB of memory and 10 GB of free space. A compatible
+  graphics card handles many more cameras; without one, analysis runs on the processor.
 
 ## Installation
 
@@ -78,16 +81,25 @@ Plans are designed for small and mid-size projects.
 2. Run the installer, choose a language and accept the administrator prompt.
    The installer is not code-signed yet. If Windows SmartScreen appears, select
    **More info** and then **Run anyway**.
-3. Choose a deployment model:
-   - **Single computer.** Installs System Manager, Storage and Workstation, already
-     connected to each other. Suitable for up to about 16 cameras, without recording
-     redundancy.
-   - **Distributed.** Select the roles for this computer: System Manager on a dedicated
-     server, Storage on one or more recording servers and Workstation on the operator
-     computers.
-4. Open Workstation or the System Manager Console.
+3. Choose how this computer will take part:
+   - **Everything on this computer.** Installs System Manager, Storage and Workstation,
+     already connected to each other. Suitable for up to about 16 cameras, without
+     recording redundancy. The AI server can be included in the same installation.
+   - **AI server only.** For a computer that only analyzes video for an existing Nexa VMS.
+     It does not install System Manager, Storage or Workstation. The installer checks the
+     hardware, asks for the server name, the address the System Manager will use and the
+     password, and can connect it to the System Manager right away or leave that for later.
+   - **Choose the parts.** Select the roles for this computer: System Manager on a
+     dedicated server, Storage on one or more recording servers, Workstation on the
+     operator computers and AI server.
+4. Open Workstation or the System Manager Console. On an AI server, the AI Server
+   NexaVMS app opens at the end.
 
-Sign in with user `admin` and password `admin`, then change the password.
+Sign in with user `admin` and password `admin`, then change the password. On an AI
+server, the user is `admin` and the password is the one chosen in the installer.
+
+The AI models (about 600 MB) download in the background after installation. The progress
+appears in the AI server app, under Models.
 
 The language selected in the installer becomes the default for the apps. Each user can
 change it from the language selector on the sign-in screen or in the sidebar.
@@ -98,6 +110,7 @@ change it from the language selector on the sign-in screen or in the sidebar.
 |---|---|
 | 58100 | System Manager |
 | 58200 | Storage |
+| 58300 | AI server |
 
 The installer adds these rules to Windows Firewall. In a distributed deployment, make
 sure the network allows these ports between the servers and the Workstations.

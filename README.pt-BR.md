@@ -18,7 +18,7 @@ disponíveis em planos acessíveis.
 
 ## Visão geral
 
-O NexaVMS tem três componentes, que podem ficar em um único computador ou distribuídos
+O NexaVMS tem quatro componentes, que podem ficar em um único computador ou distribuídos
 pela rede:
 
 | Componente | Função |
@@ -26,8 +26,9 @@ pela rede:
 | System Manager | Servidor central. Gerencia câmeras, usuários, permissões e dados do empreendimento. Roda como serviço do Windows. |
 | Storage | Servidor de gravação. Grava as câmeras em disco, aplica a retenção e entrega vídeo ao vivo e gravado. Roda como serviço do Windows. |
 | Workstation | Aplicativo do operador. Mosaicos ao vivo, playback com linha do tempo e exportação. |
+| Servidor de IA | Analisa o vídeo das câmeras para os módulos de IA e envia os eventos ao System Manager. Fica no mesmo computador ou em computadores próprios, um ou vários. Roda como serviço do Windows. |
 
-Os três vêm em um único instalador. Os apps estão disponíveis em português, inglês e
+Todos vêm em um único instalador. Os apps estão disponíveis em português, inglês e
 espanhol.
 
 ## Recursos
@@ -71,6 +72,8 @@ Os planos foram pensados para projetos pequenos e médios.
   da pasta do programa.
 - Para a Workstation, recomenda-se placa de vídeo com decodificação por hardware em
   mosaicos grandes.
+- Para o servidor de IA, pelo menos 8 GB de memória e 10 GB livres. Uma placa de vídeo
+  compatível atende muito mais câmeras; sem ela, a análise roda no processador.
 
 ## Instalação
 
@@ -79,16 +82,25 @@ Os planos foram pensados para projetos pequenos e médios.
 2. Execute o instalador, escolha o idioma e aceite o pedido de administrador.
    O instalador ainda não tem assinatura de código. Se o Windows SmartScreen aparecer,
    clique em **Mais informações** e depois em **Executar assim mesmo**.
-3. Escolha o modelo de implantação:
-   - **Um único computador.** Instala System Manager, Storage e Workstation já
+3. Escolha como este computador vai participar:
+   - **Tudo neste computador.** Instala System Manager, Storage e Workstation já
      conectados entre si. Indicado para até cerca de 16 câmeras, sem redundância de
-     gravação.
-   - **Distribuída.** Marque os papéis deste computador: System Manager num servidor
-     dedicado, Storage em um ou mais servidores de gravação e Workstation nos
-     computadores de operação.
-4. Abra a Workstation ou o Console do System Manager.
+     gravação. O servidor de IA pode ser incluído na mesma instalação.
+   - **Só o servidor de IA.** Para um computador que só analisa vídeo para um Nexa VMS
+     que já existe. Não instala System Manager, Storage nem Workstation. O instalador
+     confere o hardware, pede o nome do servidor, o endereço que o System Manager vai
+     usar e a senha, e pode já conectá-lo ao System Manager ou deixar para depois.
+   - **Escolher as partes.** Marque os papéis deste computador: System Manager num
+     servidor dedicado, Storage em um ou mais servidores de gravação, Workstation nos
+     computadores de operação e servidor de IA.
+4. Abra a Workstation ou o Console do System Manager. No servidor de IA, o app
+   Servidor de IA NexaVMS abre ao final.
 
-Entre com o usuário `admin` e a senha `admin` e troque a senha em seguida.
+Entre com o usuário `admin` e a senha `admin` e troque a senha em seguida. No servidor
+de IA, o usuário é `admin` e a senha é a escolhida no instalador.
+
+Os modelos de IA (cerca de 600 MB) são baixados em segundo plano depois da instalação.
+O andamento aparece no app do servidor de IA, em Modelos.
 
 O idioma escolhido no instalador passa a ser o padrão dos apps. Cada usuário pode
 trocar pelo seletor de idioma na tela de entrada ou na barra lateral.
@@ -99,6 +111,7 @@ trocar pelo seletor de idioma na tela de entrada ou na barra lateral.
 |---|---|
 | 58100 | System Manager |
 | 58200 | Storage |
+| 58300 | Servidor de IA |
 
 O instalador adiciona essas regras ao Firewall do Windows. Em uma instalação
 distribuída, garanta que a rede permita essas portas entre os servidores e as

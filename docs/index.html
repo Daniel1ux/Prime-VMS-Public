@@ -52,6 +52,7 @@
     { "@type": "Question", "name": "Can it replace an NVR?", "acceptedAnswer": { "@type": "Answer", "text": "Nexa VMS records IP cameras directly on a Windows PC or server, with retention by days. It can also record from existing recorders that provide RTSP streams." } },
     { "@type": "Question", "name": "How many cameras can I add?", "acceptedAnswer": { "@type": "Answer", "text": "Up to 16 on Free and up to 32 on Basic. Professional is licensed per camera, up to 500 per server, with multiple Storage and AI Servers and a standby server (N+1). The Enterprise edition, with high availability, is coming soon." } },
     { "@type": "Question", "name": "How is AI licensed?", "acceptedAnswer": { "@type": "Answer", "text": "Video analytics (people counting, face recognition, license plates, smart search and perimeter protection) are licensed per channel, meaning per camera and module, or as site-wide AI. Free includes an AI hours quota. On Free, face recognition is available only in demo mode and during the trial." } },
+    { "@type": "Question", "name": "Can I install only the AI server?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. In the installer, choose AI server only. It installs just the AI server on that computer, with its own name, address and password, and can connect it to an existing System Manager right away or later. You can have several AI servers." } },
     { "@type": "Question", "name": "Which languages are available?", "acceptedAnswer": { "@type": "Answer", "text": "English, Portuguese (Brazil) and Spanish, in the apps, the installer and the release notes." } }
   ]
 }
@@ -79,7 +80,7 @@
     <div class="cta">
       <a class="btn btn-primary" href="https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download for Windows</a>
       <a class="btn btn-ghost" href="#pricing">View plans</a>
-      <small>Version 2.11.0 · Windows 10 and 11, 64-bit · English, Português, Español</small>
+      <small>Version 2.20.0 · Windows 10 and 11, 64-bit · English, Português, Español</small>
     </div>
     <div class="trust">
       <span>Free up to 16 cameras</span><span>Any ONVIF or RTSP camera</span><span>Unlimited Workstations and users</span><span>Updates from the app</span>
@@ -176,11 +177,12 @@
 <section>
   <div class="wrap">
     <h2>How it works</h2>
-    <p class="sub">One installer with three components. Install them on one PC or across your network.</p>
+    <p class="sub">One installer with four components. Install them on one PC or across your network.</p>
     <div class="flow">
       <div class="card"><h3>Storage</h3><p>The recording server. Pulls the RTSP stream from each camera, records to disk, applies retention and serves live and recorded video.</p></div>
       <div class="card"><h3>System Manager</h3><p>The central server. Holds cameras, users and permissions, and assigns each camera to a recording server.</p></div>
       <div class="card"><h3>Workstation</h3><p>The operator application. Live layouts, playback timeline, multiple monitors and export.</p></div>
+      <div class="card"><h3>AI server</h3><p>Analyzes camera video for the AI modules and sends events to the System Manager. Install it with the rest or on its own computer: the installer has an AI server only option.</p></div>
     </div>
   </div>
 </section>
@@ -194,6 +196,7 @@
     <details><summary>Can it replace an NVR?</summary><p>Nexa VMS records IP cameras directly on a Windows PC or server, with retention by days. It can also record from existing recorders that provide RTSP streams.</p></details>
     <details><summary>How many cameras can I add?</summary><p>Up to 16 on Free and up to 32 on Basic. Professional is licensed per camera, up to 500 per server, with multiple Storage and AI Servers and a standby server (N+1). The Enterprise edition, with high availability, is coming soon.</p></details>
     <details><summary>How is AI licensed?</summary><p>Video analytics (people counting, face recognition, license plates, smart search and perimeter protection) are licensed per channel, meaning per camera and module, or as site-wide AI. Free includes an AI hours quota. On Free, face recognition is available only in demo mode and during the trial.</p></details>
+    <details><summary>Can I install only the AI server?</summary><p>Yes. In the installer, choose AI server only. It installs just the AI server on that computer, with its own name, address and password, and can connect it to an existing System Manager right away or later. You can have several AI servers.</p></details>
     <details><summary>Which languages are available?</summary><p>English, Portuguese (Brazil) and Spanish, in the apps, the installer and the release notes.</p></details>
     <details><summary>How do I open a protected export (.pvx)?</summary><p>Protected exports are encrypted with a password and only open in Nexa Player, free, for Windows. <a href="https://github.com/Daniel1ux/Prime-VMS-Public/releases/latest/download/NexaPlayer-win-x64.zip">Download Nexa Player</a>, extract the zip, open PrimePlayer.exe, choose the .pvx file and enter the password. Nexa Player shows whether each video is intact and signed.</p></details>
   </div>
