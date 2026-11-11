@@ -175,9 +175,9 @@ administrador:
 
 | Versão | Data | Instalador | Atualização pelo app |
 |---|---|---|---|
-| [2.24.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.24.0) (recomendada) | 09/11/2026 | `PrimeVMS-Setup-2.24.0.exe`, 645 MB | Sim |
+| [2.25.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.25.0) (recomendada) | 11/11/2026 | `PrimeVMS-Setup-2.25.0.exe`, 647 MB | Sim |
+| [2.24.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.24.0) | 09/11/2026 | `PrimeVMS-Setup-2.24.0.exe`, 645 MB | Sim |
 | [2.23.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.23.0) | 07/11/2026 | `PrimeVMS-Setup-2.23.0.exe`, 644 MB | Sim |
-| [2.22.1](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.22.1) | 06/11/2026 | `PrimeVMS-Setup-2.22.1.exe`, 643 MB | Sim |
 
 Ficam publicadas só as três últimas versões. Qualquer instalação anterior atualiza direto
 para a mais recente pelo app. Quem usa a versão 1.4.0 ou anterior deve instalar a mais
@@ -190,14 +190,14 @@ nem mostra vídeo. A primeira ativação traz 30 dias de avaliação do Professi
 ### Conferir o download
 
 ```powershell
-Get-FileHash .\PrimeVMS-Setup-2.24.0.exe -Algorithm SHA256
+Get-FileHash .\PrimeVMS-Setup-2.25.0.exe -Algorithm SHA256
 ```
 
 | Arquivo | SHA-256 |
 |---|---|
+| `PrimeVMS-Setup-2.25.0.exe` | `40B4D63FF935C62192CEA430A47DC55C55A5D2841B4B9B2580A128B572DE7525` |
 | `PrimeVMS-Setup-2.24.0.exe` | `05C81094B7A62F19FE6BDFF1EC9865D8EF0E3C717B17A26ACFF03838A34A8AE4` |
 | `PrimeVMS-Setup-2.23.0.exe` | `97AD2ABD803DD9DFE5688E58D2A7777DDA1B6882CFA3BF146DC9FAE38256303B` |
-| `PrimeVMS-Setup-2.22.1.exe` | `A7F25D25DA6223A2F257EFE3D0869686459014B9F50EFAC091CF847F6A00B177` |
 
 ## Perguntas frequentes
 
