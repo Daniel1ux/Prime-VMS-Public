@@ -182,7 +182,7 @@ administrador:
 
 | Versión | Fecha | Instalador | Actualización en la app |
 |---|---|---|---|
-| [2.31.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.31.0) (recomendada) | 17/11/2026 | `PrimeVMS-Setup-2.31.0.exe`, 647 MB | Sí |
+| [2.31.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.31.0) (recomendada) | 18/11/2026 | `PrimeVMS-Setup-2.31.0.exe`, 647 MB | Sí |
 | [2.30.1](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.30.1) | 17/11/2026 | `PrimeVMS-Setup-2.30.1.exe`, 647 MB | Sí |
 | [2.30.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.30.0) | 17/11/2026 | `PrimeVMS-Setup-2.30.0.exe`, 647 MB | Sí |
 

@@ -172,7 +172,7 @@ and the `pack-*.zip` files) to a folder, then run as administrator:
 
 | Version | Date | Installer | In-app updates |
 |---|---|---|---|
-| [2.31.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.31.0) (recommended) | 2026-11-17 | `PrimeVMS-Setup-2.31.0.exe`, 647 MB | Yes |
+| [2.31.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.31.0) (recommended) | 2026-11-18 | `PrimeVMS-Setup-2.31.0.exe`, 647 MB | Yes |
 | [2.30.1](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.30.1) | 2026-11-17 | `PrimeVMS-Setup-2.30.1.exe`, 647 MB | Yes |
 | [2.30.0](https://github.com/Daniel1ux/Prime-VMS-Public/releases/tag/v2.30.0) | 2026-11-17 | `PrimeVMS-Setup-2.30.0.exe`, 647 MB | Yes |
 
